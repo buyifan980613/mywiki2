@@ -5,6 +5,7 @@ import com.byf.mywiki.domain.EbookExample;
 import com.byf.mywiki.mapper.EbookMapper;
 import com.byf.mywiki.req.EbookQueryReq;
 import com.byf.mywiki.req.EbookReq;
+import com.byf.mywiki.req.EbookSaveReq;
 import com.byf.mywiki.resp.EbookQueryResp;
 import com.byf.mywiki.resp.EbookResp;
 import com.byf.mywiki.resp.PageResp;
@@ -107,6 +108,23 @@ public class EbookService {
 
         return pageResp;
     }
+
+    public void save(EbookSaveReq req) {
+        Ebook ebook = CopyUtil.copy(req, Ebook.class);
+        if (ObjectUtils.isEmpty(req.getId())) {
+            // 新增
+//            ebook.setId(snowFlake.nextId());
+            ebookMapper.insert(ebook);
+        } else {
+            // 更新
+            ebookMapper.updateByPrimaryKey(ebook);
+        }
+    }
+
+    public void delete(Long id) {
+        ebookMapper.deleteByPrimaryKey(id);
+    }
+
 
 
 }

@@ -113,21 +113,26 @@ export default defineComponent({
   name: 'Home',
   setup(){
   const ebooks = ref();
-  const ebooks1 = reactive({books:[]});
+  // const ebooks1 = reactive({books:[]});
 
 
     onMounted(()=>{
-      axios.get(process.env.VUE_APP_SERVER+"/ebook/list").then(function (response){
+      axios.get("/ebook/list",{
+        params:{
+          page:1,
+          size:1000
+        }
+      }).then(function (response){
         console.log(response);
         const data = response.data;
-        ebooks.value = data.content;
-        ebooks1.books = data.content;
+        ebooks.value = data.content.list;
+        // ebooks1.books = data.content;
       });
     });
 
     return {
-      ebooks,
-      ebooks2: toRef(ebooks1,"books")
+      ebooks
+      // ebooks2: toRef(ebooks1,"books")
     }
   },
 

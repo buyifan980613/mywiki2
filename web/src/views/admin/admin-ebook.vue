@@ -37,55 +37,58 @@
 <!--        </template>-->
         <template v-slot:action="{ text, record }">
           <a-space size="small">
-            <router-link :to="'/admin/doc?ebookId=' + record.id">
-              <a-button type="primary">
-                文档管理
-              </a-button>
-            </router-link>
+<!--            <router-link :to="'/admin/doc?ebookId=' + record.id">-->
+<!--              <a-button type="primary">-->
+<!--                文档管理-->
+<!--              </a-button>-->
+<!--            </router-link>-->
             <a-button type="primary" @click="edit(record)">
               编辑
             </a-button>
-            <a-popconfirm
-                title="删除后不可恢复，确认删除?"
-                ok-text="是"
-                cancel-text="否"
-                @confirm="handleDelete(record.id)"
-            >
+<!--            <a-button type="primary" @click="edit">-->
+<!--              编辑-->
+<!--            </a-button>-->
+<!--            <a-popconfirm-->
+<!--                title="删除后不可恢复，确认删除?"-->
+<!--                ok-text="是"-->
+<!--                cancel-text="否"-->
+<!--                @confirm="handleDelete(record.id)"-->
+<!--            >-->
               <a-button type="danger">
                 删除
               </a-button>
-            </a-popconfirm>
+<!--            </a-popconfirm>-->
           </a-space>
         </template>
       </a-table>
     </a-layout-content>
   </a-layout>
 
-<!--  <a-modal-->
-<!--      title="电子书表单"-->
-<!--      v-model:visible="modalVisible"-->
-<!--      :confirm-loading="modalLoading"-->
-<!--      @ok="handleModalOk"-->
-<!--  >-->
-<!--    <a-form :model="ebook" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">-->
-<!--      <a-form-item label="封面">-->
-<!--        <a-input v-model:value="ebook.cover" />-->
-<!--      </a-form-item>-->
-<!--      <a-form-item label="名称">-->
-<!--        <a-input v-model:value="ebook.name" />-->
-<!--      </a-form-item>-->
-<!--      <a-form-item label="分类">-->
-<!--        <a-cascader-->
-<!--            v-model:value="categoryIds"-->
-<!--            :field-names="{ label: 'name', value: 'id', children: 'children' }"-->
-<!--            :options="level1"-->
-<!--        />-->
-<!--      </a-form-item>-->
-<!--      <a-form-item label="描述">-->
-<!--        <a-input v-model:value="ebook.description" type="textarea" />-->
-<!--      </a-form-item>-->
-<!--    </a-form>-->
-<!--  </a-modal>-->
+  <a-modal
+      title="电子书表单"
+      v-model:visible="modalVisible"
+      :confirm-loading="modalLoading"
+      @ok="handleModalOk"
+  >
+    <a-form :model="ebook" :label-col="{ span: 6 }" :wrapper-col="{ span: 18 }">
+      <a-form-item label="封面">
+        <a-input v-model:value="ebook.cover" />
+      </a-form-item>
+      <a-form-item label="名称">
+        <a-input v-model:value="ebook.name" />
+      </a-form-item>
+      <a-form-item label="分类">
+        <a-cascader
+            v-model:value="categoryIds"
+            :field-names="{ label: 'name', value: 'id', children: 'children' }"
+            :options="level1"
+        />
+      </a-form-item>
+      <a-form-item label="描述">
+        <a-input v-model:value="ebook.description" type="textarea" />
+      </a-form-item>
+    </a-form>
+  </a-modal>
 </template>
 
 <script lang="ts">
@@ -151,7 +154,7 @@ export default defineComponent({
         params: {
           page: params.page,
           size: params.size,
-          name: param.value.name
+          // name: param.value.name
         }
       }).then((response) => {
         loading.value = false;
@@ -183,14 +186,15 @@ export default defineComponent({
     /**
      * 数组，[100, 101]对应：前端开发 / Vue
      */
-    const categoryIds = ref();
+    // const categoryIds = ref();
     const ebook = ref();
     const modalVisible = ref(false);
     const modalLoading = ref(false);
     const handleModalOk = () => {
       modalLoading.value = true;
-      ebook.value.category1Id = categoryIds.value[0];
-      ebook.value.category2Id = categoryIds.value[1];
+      console.log("save");
+      // ebook.value.category1Id = categoryIds.value[0];
+      // ebook.value.category2Id = categoryIds.value[1];
       axios.post("/ebook/save", ebook.value).then((response) => {
         modalLoading.value = false;
         const data = response.data; // data = commonResp
@@ -211,11 +215,11 @@ export default defineComponent({
     // /**
     //  * 编辑
     //  */
-    // const edit = (record: any) => {
-    //   modalVisible.value = true;
-    //   ebook.value = Tool.copy(record);
-    //   categoryIds.value = [ebook.value.category1Id, ebook.value.category2Id]
-    // };
+    const edit = (record: any) => {
+      modalVisible.value = true;
+      ebook.value = record;
+      // categoryIds.value = [ebook.value.category1Id, ebook.value.category2Id]
+    };
     //
     // /**
     //  * 新增
@@ -288,14 +292,14 @@ export default defineComponent({
       loading,
       handleTableChange,
       handleQuery,
-
-      // edit,
+      handleModalOk,
+      edit,
       // add,
 
       ebook,
       modalVisible,
       modalLoading,
-      categoryIds,
+      // categoryIds,
       level1,
     }
   }
