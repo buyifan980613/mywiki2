@@ -10,6 +10,7 @@ import com.byf.mywiki.resp.EbookQueryResp;
 import com.byf.mywiki.resp.EbookResp;
 import com.byf.mywiki.resp.PageResp;
 import com.byf.mywiki.util.CopyUtil;
+import com.byf.mywiki.util.SnowFlake;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
@@ -19,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +28,10 @@ import java.util.List;
 public class EbookService {
 
     private static final Logger LOG = LoggerFactory.getLogger(EbookService.class);
+
+
+    @Resource
+    private SnowFlake snowFlake;
 
     @Autowired
     private EbookMapper ebookMapper;
@@ -113,7 +119,8 @@ public class EbookService {
         Ebook ebook = CopyUtil.copy(req, Ebook.class);
         if (ObjectUtils.isEmpty(req.getId())) {
             // 新增
-//            ebook.setId(snowFlake.nextId());
+            LOG.info("11111111");
+            ebook.setId(snowFlake.nextId());
             ebookMapper.insert(ebook);
         } else {
             // 更新

@@ -220,14 +220,14 @@ export default defineComponent({
       ebook.value = record;
       // categoryIds.value = [ebook.value.category1Id, ebook.value.category2Id]
     };
-    //
-    // /**
-    //  * 新增
-    //  */
-    // const add = () => {
-    //   modalVisible.value = true;
-    //   ebook.value = {};
-    // };
+
+    /**
+     * 新增
+     */
+    const add = () => {
+      modalVisible.value = true;
+      ebook.value = {};
+    };
 
     const handleDelete = (id: number) => {
       axios.delete("/ebook/delete/" + id).then((response) => {
@@ -294,7 +294,7 @@ export default defineComponent({
       handleQuery,
       handleModalOk,
       edit,
-      // add,
+      add,
 
       ebook,
       modalVisible,

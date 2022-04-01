@@ -34,3 +34,16 @@ insert into  ebook (id,name,description) values  (1,'Springboot','java入门');
 insert into  ebook (id,name,description) values  (2,'Spring','java入门');
 insert into  ebook (id,name,description) values  (3,'SpringMVC','java入门');
 insert into  ebook (id,name,description) values  (4,'Mybatis','java入门');
+
+create  table category (
+                        id bigint not null comment 'id',
+                        parent bigint not null default 0 comment '父id',
+                        name varchar(50) not null comment '名称',name
+                        sort int comment '顺序',
+                        primary key (id)
+)engine =innodb default  charset = utf8mb4 comment ='分类';
+
+
+insert into  category(category.id, category.parent, category.name, category.sort) values (100,000,'前端开发',100);
+insert into  category(category.id, category.parent, category.name, category.sort) values (101,100,'vue',101);
+insert into  category(category.id, category.parent, category.name, category.sort) values (102,100,'vue2',102);
