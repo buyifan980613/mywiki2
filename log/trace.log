@@ -3038,3 +3038,514 @@ java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
 2022-04-01 20:55:45.809 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2022-04-01 20:55:45.809 INFO  com.byf.mywiki.config.MywikiApplication           :24   [32m                  [0;39m 启动成功！！
 2022-04-01 20:55:45.810 INFO  com.byf.mywiki.config.MywikiApplication           :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-04-01 20:55:57.107 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-01 20:55:57.108 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-01 20:55:57.109 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 1 ms
+2022-04-01 20:55:57.110 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:55:57.110 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:55:57.110 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:55:57.128 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165081753596334080[0;39m ------------- 开始 -------------
+2022-04-01 20:55:57.129 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165081753596334080[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:55:57.129 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165081753596334080[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 20:55:57.129 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165081753596334080[0;39m 远程地址: 127.0.0.1
+2022-04-01 20:55:57.131 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165081753596334080[0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-01 20:55:57.135 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m165081753596334080[0;39m HikariPool-3 - Starting...
+2022-04-01 20:55:57.144 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m165081753596334080[0;39m HikariPool-3 - Start completed.
+2022-04-01 20:55:57.145 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165081753596334080[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 20:55:57.145 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165081753596334080[0;39m ==> Parameters: 
+2022-04-01 20:55:57.147 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165081753596334080[0;39m <==    Columns: count(0)
+2022-04-01 20:55:57.147 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165081753596334080[0;39m <==        Row: 4
+2022-04-01 20:55:57.148 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165081753596334080[0;39m <==      Total: 1
+2022-04-01 20:55:57.148 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165081753596334080[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 20:55:57.149 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165081753596334080[0;39m ==> Parameters: 1000(Integer)
+2022-04-01 20:55:57.150 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165081753596334080[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 20:55:57.151 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165081753596334080[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 20:55:57.151 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165081753596334080[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 20:55:57.151 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165081753596334080[0;39m <==        Row: 3, SpringMVC, null, null, java入门, null, null, null, null
+2022-04-01 20:55:57.151 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165081753596334080[0;39m <==        Row: 4, Mybatis, null, null, java入门, null, null, null, null
+2022-04-01 20:55:57.151 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165081753596334080[0;39m <==      Total: 4
+2022-04-01 20:55:57.152 INFO  com.byf.mywiki.service.EbookService               :95   [32m165081753596334080[0;39m 总行数：4
+2022-04-01 20:55:57.152 INFO  com.byf.mywiki.service.EbookService               :96   [32m165081753596334080[0;39m 总页数：1
+2022-04-01 20:55:57.157 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165081753596334080[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"},{"description":"java入门","id":3,"name":"SpringMVC"},{"description":"java入门","id":4,"name":"Mybatis"}],"total":4},"success":true}
+2022-04-01 20:55:57.158 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165081753596334080[0;39m ------------- 结束 耗时：31 ms -------------
+2022-04-01 20:55:57.162 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165081753596334080[0;39m ------------- LogFilter 结束 耗时：51 ms -------------
+2022-04-01 20:55:58.191 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:55:58.192 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:55:58.192 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:55:58.193 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165081758063267840[0;39m ------------- 开始 -------------
+2022-04-01 20:55:58.193 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165081758063267840[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:55:58.193 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165081758063267840[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 20:55:58.194 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165081758063267840[0;39m 远程地址: 127.0.0.1
+2022-04-01 20:55:58.194 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165081758063267840[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-01 20:55:58.199 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165081758063267840[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 20:55:58.200 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165081758063267840[0;39m ==> Parameters: 
+2022-04-01 20:55:58.202 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165081758063267840[0;39m <==    Columns: count(0)
+2022-04-01 20:55:58.203 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165081758063267840[0;39m <==        Row: 4
+2022-04-01 20:55:58.203 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165081758063267840[0;39m <==      Total: 1
+2022-04-01 20:55:58.204 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165081758063267840[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 20:55:58.204 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165081758063267840[0;39m ==> Parameters: 2(Integer)
+2022-04-01 20:55:58.206 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165081758063267840[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 20:55:58.206 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165081758063267840[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 20:55:58.207 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165081758063267840[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 20:55:58.207 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165081758063267840[0;39m <==      Total: 2
+2022-04-01 20:55:58.207 INFO  com.byf.mywiki.service.EbookService               :95   [32m165081758063267840[0;39m 总行数：4
+2022-04-01 20:55:58.207 INFO  com.byf.mywiki.service.EbookService               :96   [32m165081758063267840[0;39m 总页数：2
+2022-04-01 20:55:58.208 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165081758063267840[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"}],"total":4},"success":true}
+2022-04-01 20:55:58.208 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165081758063267840[0;39m ------------- 结束 耗时：15 ms -------------
+2022-04-01 20:55:58.210 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165081758063267840[0;39m ------------- LogFilter 结束 耗时：18 ms -------------
+2022-04-01 20:56:03.501 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:56:03.501 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/save OPTIONS
+2022-04-01 20:56:03.501 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:56:03.502 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-04-01 20:56:03.504 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:56:03.505 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/save POST
+2022-04-01 20:56:03.505 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:56:03.516 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.byf.mywiki.resp.CommonResp com.byf.mywiki.controller.EbookController.save(com.byf.mywiki.req.EbookSaveReq): [Field error in object 'ebookSaveReq' on field 'name': rejected value [null]; codes [NotNull.ebookSaveReq.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ebookSaveReq.name,name]; arguments []; default message [name]]; default message [【名称】不能为空]] ]
+2022-04-01 20:56:03.516 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：11 ms -------------
+2022-04-01 20:57:26.242 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:57:26.243 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:57:26.243 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:57:26.244 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165082127375929344[0;39m ------------- 开始 -------------
+2022-04-01 20:57:26.244 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165082127375929344[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:57:26.244 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165082127375929344[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 20:57:26.244 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165082127375929344[0;39m 远程地址: 127.0.0.1
+2022-04-01 20:57:26.244 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165082127375929344[0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-01 20:57:26.247 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082127375929344[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 20:57:26.248 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082127375929344[0;39m ==> Parameters: 
+2022-04-01 20:57:26.250 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165082127375929344[0;39m <==    Columns: count(0)
+2022-04-01 20:57:26.251 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165082127375929344[0;39m <==        Row: 4
+2022-04-01 20:57:26.251 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082127375929344[0;39m <==      Total: 1
+2022-04-01 20:57:26.252 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082127375929344[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 20:57:26.252 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082127375929344[0;39m ==> Parameters: 1000(Integer)
+2022-04-01 20:57:26.254 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082127375929344[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 20:57:26.254 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082127375929344[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 20:57:26.255 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082127375929344[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 20:57:26.255 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082127375929344[0;39m <==        Row: 3, SpringMVC, null, null, java入门, null, null, null, null
+2022-04-01 20:57:26.255 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082127375929344[0;39m <==        Row: 4, Mybatis, null, null, java入门, null, null, null, null
+2022-04-01 20:57:26.255 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082127375929344[0;39m <==      Total: 4
+2022-04-01 20:57:26.256 INFO  com.byf.mywiki.service.EbookService               :95   [32m165082127375929344[0;39m 总行数：4
+2022-04-01 20:57:26.256 INFO  com.byf.mywiki.service.EbookService               :96   [32m165082127375929344[0;39m 总页数：1
+2022-04-01 20:57:26.256 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165082127375929344[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"},{"description":"java入门","id":3,"name":"SpringMVC"},{"description":"java入门","id":4,"name":"Mybatis"}],"total":4},"success":true}
+2022-04-01 20:57:26.257 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165082127375929344[0;39m ------------- 结束 耗时：13 ms -------------
+2022-04-01 20:57:26.258 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165082127375929344[0;39m ------------- LogFilter 结束 耗时：15 ms -------------
+2022-04-01 20:57:27.558 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:57:27.559 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:57:27.559 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:57:27.560 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165082132895633408[0;39m ------------- 开始 -------------
+2022-04-01 20:57:27.560 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165082132895633408[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:57:27.560 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165082132895633408[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 20:57:27.560 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165082132895633408[0;39m 远程地址: 127.0.0.1
+2022-04-01 20:57:27.560 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165082132895633408[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-01 20:57:27.563 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082132895633408[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 20:57:27.563 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082132895633408[0;39m ==> Parameters: 
+2022-04-01 20:57:27.565 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165082132895633408[0;39m <==    Columns: count(0)
+2022-04-01 20:57:27.566 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165082132895633408[0;39m <==        Row: 4
+2022-04-01 20:57:27.566 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082132895633408[0;39m <==      Total: 1
+2022-04-01 20:57:27.567 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082132895633408[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 20:57:27.567 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082132895633408[0;39m ==> Parameters: 2(Integer)
+2022-04-01 20:57:27.569 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082132895633408[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 20:57:27.569 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082132895633408[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 20:57:27.570 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082132895633408[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 20:57:27.570 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082132895633408[0;39m <==      Total: 2
+2022-04-01 20:57:27.571 INFO  com.byf.mywiki.service.EbookService               :95   [32m165082132895633408[0;39m 总行数：4
+2022-04-01 20:57:27.571 INFO  com.byf.mywiki.service.EbookService               :96   [32m165082132895633408[0;39m 总页数：2
+2022-04-01 20:57:27.571 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165082132895633408[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"}],"total":4},"success":true}
+2022-04-01 20:57:27.571 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165082132895633408[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-01 20:57:27.573 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165082132895633408[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-01 20:57:31.029 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:57:31.029 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/save OPTIONS
+2022-04-01 20:57:31.029 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:57:31.030 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-04-01 20:57:31.032 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:57:31.033 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/save POST
+2022-04-01 20:57:31.033 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:57:31.034 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :207  [32m                  [0;39m Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.byf.mywiki.resp.CommonResp com.byf.mywiki.controller.EbookController.save(com.byf.mywiki.req.EbookSaveReq): [Field error in object 'ebookSaveReq' on field 'name': rejected value [null]; codes [NotNull.ebookSaveReq.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ebookSaveReq.name,name]; arguments []; default message [name]]; default message [【名称】不能为空]] ]
+2022-04-01 20:57:31.034 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-04-01 20:58:11.548 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:58:11.548 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:58:11.549 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:58:11.549 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165082317398872064[0;39m ------------- 开始 -------------
+2022-04-01 20:58:11.550 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165082317398872064[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:58:11.550 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165082317398872064[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 20:58:11.550 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165082317398872064[0;39m 远程地址: 127.0.0.1
+2022-04-01 20:58:11.550 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165082317398872064[0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-01 20:58:11.553 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082317398872064[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 20:58:11.553 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082317398872064[0;39m ==> Parameters: 
+2022-04-01 20:58:11.555 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165082317398872064[0;39m <==    Columns: count(0)
+2022-04-01 20:58:11.556 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165082317398872064[0;39m <==        Row: 4
+2022-04-01 20:58:11.556 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082317398872064[0;39m <==      Total: 1
+2022-04-01 20:58:11.557 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082317398872064[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 20:58:11.557 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082317398872064[0;39m ==> Parameters: 1000(Integer)
+2022-04-01 20:58:11.559 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082317398872064[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 20:58:11.559 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082317398872064[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 20:58:11.560 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082317398872064[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 20:58:11.560 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082317398872064[0;39m <==        Row: 3, SpringMVC, null, null, java入门, null, null, null, null
+2022-04-01 20:58:11.560 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082317398872064[0;39m <==        Row: 4, Mybatis, null, null, java入门, null, null, null, null
+2022-04-01 20:58:11.561 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082317398872064[0;39m <==      Total: 4
+2022-04-01 20:58:11.562 INFO  com.byf.mywiki.service.EbookService               :95   [32m165082317398872064[0;39m 总行数：4
+2022-04-01 20:58:11.562 INFO  com.byf.mywiki.service.EbookService               :96   [32m165082317398872064[0;39m 总页数：1
+2022-04-01 20:58:11.564 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165082317398872064[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"},{"description":"java入门","id":3,"name":"SpringMVC"},{"description":"java入门","id":4,"name":"Mybatis"}],"total":4},"success":true}
+2022-04-01 20:58:11.564 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165082317398872064[0;39m ------------- 结束 耗时：15 ms -------------
+2022-04-01 20:58:11.567 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165082317398872064[0;39m ------------- LogFilter 结束 耗时：18 ms -------------
+2022-04-01 20:58:12.502 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:58:12.502 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:58:12.502 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:58:12.503 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165082321400238080[0;39m ------------- 开始 -------------
+2022-04-01 20:58:12.503 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165082321400238080[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:58:12.503 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165082321400238080[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 20:58:12.504 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165082321400238080[0;39m 远程地址: 127.0.0.1
+2022-04-01 20:58:12.504 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165082321400238080[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-01 20:58:12.506 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082321400238080[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 20:58:12.507 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082321400238080[0;39m ==> Parameters: 
+2022-04-01 20:58:12.509 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165082321400238080[0;39m <==    Columns: count(0)
+2022-04-01 20:58:12.510 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165082321400238080[0;39m <==        Row: 4
+2022-04-01 20:58:12.510 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082321400238080[0;39m <==      Total: 1
+2022-04-01 20:58:12.510 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082321400238080[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 20:58:12.511 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082321400238080[0;39m ==> Parameters: 2(Integer)
+2022-04-01 20:58:12.513 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082321400238080[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 20:58:12.513 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082321400238080[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 20:58:12.514 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082321400238080[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 20:58:12.514 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082321400238080[0;39m <==      Total: 2
+2022-04-01 20:58:12.514 INFO  com.byf.mywiki.service.EbookService               :95   [32m165082321400238080[0;39m 总行数：4
+2022-04-01 20:58:12.514 INFO  com.byf.mywiki.service.EbookService               :96   [32m165082321400238080[0;39m 总页数：2
+2022-04-01 20:58:12.515 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165082321400238080[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"}],"total":4},"success":true}
+2022-04-01 20:58:12.515 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165082321400238080[0;39m ------------- 结束 耗时：12 ms -------------
+2022-04-01 20:58:12.518 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165082321400238080[0;39m ------------- LogFilter 结束 耗时：15 ms -------------
+2022-04-01 20:58:20.007 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165081753596334080[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:58:20.008 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165081753596334080[0;39m 请求地址: http://127.0.0.1:8880/ebook/save OPTIONS
+2022-04-01 20:58:20.008 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165081753596334080[0;39m 远程地址: 127.0.0.1
+2022-04-01 20:58:20.008 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165081753596334080[0;39m ------------- LogFilter 结束 耗时：0 ms -------------
+2022-04-01 20:58:20.011 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165081758063267840[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:58:20.011 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165081758063267840[0;39m 请求地址: http://127.0.0.1:8880/ebook/save POST
+2022-04-01 20:58:20.011 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165081758063267840[0;39m 远程地址: 127.0.0.1
+2022-04-01 20:58:20.012 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165082352895266816[0;39m ------------- 开始 -------------
+2022-04-01 20:58:20.012 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165082352895266816[0;39m 请求地址: http://127.0.0.1:8880/ebook/save POST
+2022-04-01 20:58:20.012 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165082352895266816[0;39m 类名方法: com.byf.mywiki.controller.EbookController.save
+2022-04-01 20:58:20.012 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165082352895266816[0;39m 远程地址: 127.0.0.1
+2022-04-01 20:58:20.014 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165082352895266816[0;39m 请求参数: [{"cover":"123","name":"123"}]
+2022-04-01 20:58:20.014 INFO  com.byf.mywiki.service.EbookService               :122  [32m165082352895266816[0;39m 11111111
+2022-04-01 20:58:20.016 DEBUG com.byf.mywiki.mapper.EbookMapper.insert          :137  [32m165082352895266816[0;39m ==>  Preparing: insert into ebook (id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count ) values (?, ?, ?, ?, ?, ?, ?, ?, ? )
+2022-04-01 20:58:20.017 DEBUG com.byf.mywiki.mapper.EbookMapper.insert          :137  [32m165082352895266816[0;39m ==> Parameters: 165082352903655424(Long), 123(String), null, null, null, 123(String), null, null, null
+2022-04-01 20:58:20.024 DEBUG com.byf.mywiki.mapper.EbookMapper.insert          :137  [32m165082352895266816[0;39m <==    Updates: 1
+2022-04-01 20:58:20.024 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165082352895266816[0;39m 返回结果: {"success":true}
+2022-04-01 20:58:20.024 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165082352895266816[0;39m ------------- 结束 耗时：12 ms -------------
+2022-04-01 20:58:20.027 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165082352895266816[0;39m ------------- LogFilter 结束 耗时：16 ms -------------
+2022-04-01 20:58:20.047 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 20:58:20.047 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:58:20.047 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 20:58:20.049 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165082353050456064[0;39m ------------- 开始 -------------
+2022-04-01 20:58:20.049 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165082353050456064[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 20:58:20.049 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165082353050456064[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 20:58:20.049 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165082353050456064[0;39m 远程地址: 127.0.0.1
+2022-04-01 20:58:20.049 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165082353050456064[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-01 20:58:20.050 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082353050456064[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 20:58:20.051 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082353050456064[0;39m ==> Parameters: 
+2022-04-01 20:58:20.053 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165082353050456064[0;39m <==    Columns: count(0)
+2022-04-01 20:58:20.054 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165082353050456064[0;39m <==        Row: 5
+2022-04-01 20:58:20.054 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165082353050456064[0;39m <==      Total: 1
+2022-04-01 20:58:20.055 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082353050456064[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 20:58:20.055 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082353050456064[0;39m ==> Parameters: 2(Integer)
+2022-04-01 20:58:20.057 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082353050456064[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 20:58:20.058 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082353050456064[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 20:58:20.058 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165082353050456064[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 20:58:20.058 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165082353050456064[0;39m <==      Total: 2
+2022-04-01 20:58:20.059 INFO  com.byf.mywiki.service.EbookService               :95   [32m165082353050456064[0;39m 总行数：5
+2022-04-01 20:58:20.059 INFO  com.byf.mywiki.service.EbookService               :96   [32m165082353050456064[0;39m 总页数：3
+2022-04-01 20:58:20.059 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165082353050456064[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"}],"total":5},"success":true}
+2022-04-01 20:58:20.059 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165082353050456064[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-01 20:58:20.062 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165082353050456064[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-01 21:03:58.335 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165082127375929344[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:03:58.335 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165082127375929344[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:03:58.335 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165082127375929344[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:03:58.336 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165083771928973312[0;39m ------------- 开始 -------------
+2022-04-01 21:03:58.337 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165083771928973312[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:03:58.337 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165083771928973312[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:03:58.337 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165083771928973312[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:03:58.338 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165083771928973312[0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-01 21:03:58.340 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083771928973312[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:03:58.341 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083771928973312[0;39m ==> Parameters: 
+2022-04-01 21:03:58.343 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083771928973312[0;39m <==    Columns: count(0)
+2022-04-01 21:03:58.343 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083771928973312[0;39m <==        Row: 5
+2022-04-01 21:03:58.344 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083771928973312[0;39m <==      Total: 1
+2022-04-01 21:03:58.344 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083771928973312[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 21:03:58.345 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083771928973312[0;39m ==> Parameters: 1000(Integer)
+2022-04-01 21:03:58.346 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083771928973312[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:03:58.347 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083771928973312[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 21:03:58.347 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083771928973312[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 21:03:58.347 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083771928973312[0;39m <==        Row: 3, SpringMVC, null, null, java入门, null, null, null, null
+2022-04-01 21:03:58.347 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083771928973312[0;39m <==        Row: 4, Mybatis, null, null, java入门, null, null, null, null
+2022-04-01 21:03:58.348 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083771928973312[0;39m <==        Row: 165082352903655424, 123, null, null, null, 123, null, null, null
+2022-04-01 21:03:58.348 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083771928973312[0;39m <==      Total: 5
+2022-04-01 21:03:58.348 INFO  com.byf.mywiki.service.EbookService               :95   [32m165083771928973312[0;39m 总行数：5
+2022-04-01 21:03:58.348 INFO  com.byf.mywiki.service.EbookService               :96   [32m165083771928973312[0;39m 总页数：1
+2022-04-01 21:03:58.349 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165083771928973312[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"},{"description":"java入门","id":3,"name":"SpringMVC"},{"description":"java入门","id":4,"name":"Mybatis"},{"cover":"123","id":165082352903655424,"name":"123"}],"total":5},"success":true}
+2022-04-01 21:03:58.349 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165083771928973312[0;39m ------------- 结束 耗时：13 ms -------------
+2022-04-01 21:03:58.351 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165083771928973312[0;39m ------------- LogFilter 结束 耗时：15 ms -------------
+2022-04-01 21:04:01.006 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165082132895633408[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:04:01.007 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165082132895633408[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:01.007 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165082132895633408[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:01.008 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165083783136153600[0;39m ------------- 开始 -------------
+2022-04-01 21:04:01.008 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165083783136153600[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:01.008 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165083783136153600[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:04:01.008 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165083783136153600[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:01.008 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165083783136153600[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-01 21:04:01.011 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083783136153600[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:04:01.011 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083783136153600[0;39m ==> Parameters: 
+2022-04-01 21:04:01.013 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083783136153600[0;39m <==    Columns: count(0)
+2022-04-01 21:04:01.014 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083783136153600[0;39m <==        Row: 5
+2022-04-01 21:04:01.014 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083783136153600[0;39m <==      Total: 1
+2022-04-01 21:04:01.014 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083783136153600[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 21:04:01.015 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083783136153600[0;39m ==> Parameters: 2(Integer)
+2022-04-01 21:04:01.017 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083783136153600[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:04:01.017 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083783136153600[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 21:04:01.017 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083783136153600[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 21:04:01.018 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083783136153600[0;39m <==      Total: 2
+2022-04-01 21:04:01.018 INFO  com.byf.mywiki.service.EbookService               :95   [32m165083783136153600[0;39m 总行数：5
+2022-04-01 21:04:01.018 INFO  com.byf.mywiki.service.EbookService               :96   [32m165083783136153600[0;39m 总页数：3
+2022-04-01 21:04:01.018 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165083783136153600[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"}],"total":5},"success":true}
+2022-04-01 21:04:01.019 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165083783136153600[0;39m ------------- 结束 耗时：12 ms -------------
+2022-04-01 21:04:01.021 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165083783136153600[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-01 21:04:04.103 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:04:04.103 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:04.103 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:04.104 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165083796121718784[0;39m ------------- 开始 -------------
+2022-04-01 21:04:04.105 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165083796121718784[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:04.105 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165083796121718784[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:04:04.105 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165083796121718784[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:04.105 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165083796121718784[0;39m 请求参数: [{"page":2,"size":2}]
+2022-04-01 21:04:04.108 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083796121718784[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:04:04.108 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083796121718784[0;39m ==> Parameters: 
+2022-04-01 21:04:04.110 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083796121718784[0;39m <==    Columns: count(0)
+2022-04-01 21:04:04.110 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083796121718784[0;39m <==        Row: 5
+2022-04-01 21:04:04.110 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083796121718784[0;39m <==      Total: 1
+2022-04-01 21:04:04.111 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083796121718784[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?, ?
+2022-04-01 21:04:04.111 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083796121718784[0;39m ==> Parameters: 2(Integer), 2(Integer)
+2022-04-01 21:04:04.112 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083796121718784[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:04:04.112 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083796121718784[0;39m <==        Row: 3, SpringMVC, null, null, java入门, null, null, null, null
+2022-04-01 21:04:04.112 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083796121718784[0;39m <==        Row: 4, Mybatis, null, null, java入门, null, null, null, null
+2022-04-01 21:04:04.112 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083796121718784[0;39m <==      Total: 2
+2022-04-01 21:04:04.113 INFO  com.byf.mywiki.service.EbookService               :95   [32m165083796121718784[0;39m 总行数：5
+2022-04-01 21:04:04.113 INFO  com.byf.mywiki.service.EbookService               :96   [32m165083796121718784[0;39m 总页数：3
+2022-04-01 21:04:04.113 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165083796121718784[0;39m 返回结果: {"content":{"list":[{"description":"java入门","id":3,"name":"SpringMVC"},{"description":"java入门","id":4,"name":"Mybatis"}],"total":5},"success":true}
+2022-04-01 21:04:04.113 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165083796121718784[0;39m ------------- 结束 耗时：9 ms -------------
+2022-04-01 21:04:04.115 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165083796121718784[0;39m ------------- LogFilter 结束 耗时：12 ms -------------
+2022-04-01 21:04:05.408 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:04:05.409 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:05.409 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:05.410 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165083801599479808[0;39m ------------- 开始 -------------
+2022-04-01 21:04:05.410 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165083801599479808[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:05.410 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165083801599479808[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:04:05.410 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165083801599479808[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:05.410 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165083801599479808[0;39m 请求参数: [{"page":3,"size":2}]
+2022-04-01 21:04:05.414 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083801599479808[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:04:05.414 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083801599479808[0;39m ==> Parameters: 
+2022-04-01 21:04:05.416 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083801599479808[0;39m <==    Columns: count(0)
+2022-04-01 21:04:05.417 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083801599479808[0;39m <==        Row: 5
+2022-04-01 21:04:05.417 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083801599479808[0;39m <==      Total: 1
+2022-04-01 21:04:05.417 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083801599479808[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?, ?
+2022-04-01 21:04:05.417 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083801599479808[0;39m ==> Parameters: 4(Integer), 2(Integer)
+2022-04-01 21:04:05.419 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083801599479808[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:04:05.419 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083801599479808[0;39m <==        Row: 165082352903655424, 123, null, null, null, 123, null, null, null
+2022-04-01 21:04:05.420 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083801599479808[0;39m <==      Total: 1
+2022-04-01 21:04:05.420 INFO  com.byf.mywiki.service.EbookService               :95   [32m165083801599479808[0;39m 总行数：5
+2022-04-01 21:04:05.420 INFO  com.byf.mywiki.service.EbookService               :96   [32m165083801599479808[0;39m 总页数：3
+2022-04-01 21:04:05.421 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165083801599479808[0;39m 返回结果: {"content":{"list":[{"cover":"123","id":165082352903655424,"name":"123"}],"total":5},"success":true}
+2022-04-01 21:04:05.421 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165083801599479808[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-01 21:04:05.423 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165083801599479808[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-01 21:04:10.686 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165082317398872064[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:04:10.686 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165082317398872064[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:10.686 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165082317398872064[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:10.687 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165083823732822016[0;39m ------------- 开始 -------------
+2022-04-01 21:04:10.687 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165083823732822016[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:10.687 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165083823732822016[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:04:10.687 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165083823732822016[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:10.688 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165083823732822016[0;39m 请求参数: [{"page":2,"size":2}]
+2022-04-01 21:04:10.690 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083823732822016[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:04:10.691 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083823732822016[0;39m ==> Parameters: 
+2022-04-01 21:04:10.693 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083823732822016[0;39m <==    Columns: count(0)
+2022-04-01 21:04:10.693 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083823732822016[0;39m <==        Row: 5
+2022-04-01 21:04:10.694 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083823732822016[0;39m <==      Total: 1
+2022-04-01 21:04:10.694 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083823732822016[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?, ?
+2022-04-01 21:04:10.694 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083823732822016[0;39m ==> Parameters: 2(Integer), 2(Integer)
+2022-04-01 21:04:10.696 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083823732822016[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:04:10.696 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083823732822016[0;39m <==        Row: 3, SpringMVC, null, null, java入门, null, null, null, null
+2022-04-01 21:04:10.697 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083823732822016[0;39m <==        Row: 4, Mybatis, null, null, java入门, null, null, null, null
+2022-04-01 21:04:10.697 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083823732822016[0;39m <==      Total: 2
+2022-04-01 21:04:10.697 INFO  com.byf.mywiki.service.EbookService               :95   [32m165083823732822016[0;39m 总行数：5
+2022-04-01 21:04:10.697 INFO  com.byf.mywiki.service.EbookService               :96   [32m165083823732822016[0;39m 总页数：3
+2022-04-01 21:04:10.698 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165083823732822016[0;39m 返回结果: {"content":{"list":[{"description":"java入门","id":3,"name":"SpringMVC"},{"description":"java入门","id":4,"name":"Mybatis"}],"total":5},"success":true}
+2022-04-01 21:04:10.698 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165083823732822016[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-01 21:04:10.700 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165083823732822016[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-01 21:04:11.433 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165082321400238080[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:04:11.433 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165082321400238080[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:11.433 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165082321400238080[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:11.434 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165083826865967104[0;39m ------------- 开始 -------------
+2022-04-01 21:04:11.435 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165083826865967104[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:11.435 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165083826865967104[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:04:11.435 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165083826865967104[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:11.435 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165083826865967104[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-01 21:04:11.438 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083826865967104[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:04:11.439 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083826865967104[0;39m ==> Parameters: 
+2022-04-01 21:04:11.441 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083826865967104[0;39m <==    Columns: count(0)
+2022-04-01 21:04:11.441 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083826865967104[0;39m <==        Row: 5
+2022-04-01 21:04:11.441 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083826865967104[0;39m <==      Total: 1
+2022-04-01 21:04:11.442 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083826865967104[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 21:04:11.442 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083826865967104[0;39m ==> Parameters: 2(Integer)
+2022-04-01 21:04:11.444 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083826865967104[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:04:11.444 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083826865967104[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 21:04:11.444 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083826865967104[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 21:04:11.444 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083826865967104[0;39m <==      Total: 2
+2022-04-01 21:04:11.445 INFO  com.byf.mywiki.service.EbookService               :95   [32m165083826865967104[0;39m 总行数：5
+2022-04-01 21:04:11.445 INFO  com.byf.mywiki.service.EbookService               :96   [32m165083826865967104[0;39m 总页数：3
+2022-04-01 21:04:11.445 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165083826865967104[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"}],"total":5},"success":true}
+2022-04-01 21:04:11.445 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165083826865967104[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-01 21:04:11.447 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165083826865967104[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-01 21:04:12.330 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165081753596334080[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:04:12.331 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165081753596334080[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:12.331 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165081753596334080[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:12.331 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165083830628257792[0;39m ------------- 开始 -------------
+2022-04-01 21:04:12.332 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165083830628257792[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:12.332 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165083830628257792[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:04:12.332 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165083830628257792[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:12.332 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165083830628257792[0;39m 请求参数: [{"page":3,"size":2}]
+2022-04-01 21:04:12.334 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083830628257792[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:04:12.335 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083830628257792[0;39m ==> Parameters: 
+2022-04-01 21:04:12.337 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083830628257792[0;39m <==    Columns: count(0)
+2022-04-01 21:04:12.337 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083830628257792[0;39m <==        Row: 5
+2022-04-01 21:04:12.337 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083830628257792[0;39m <==      Total: 1
+2022-04-01 21:04:12.338 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083830628257792[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?, ?
+2022-04-01 21:04:12.338 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083830628257792[0;39m ==> Parameters: 4(Integer), 2(Integer)
+2022-04-01 21:04:12.340 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083830628257792[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:04:12.341 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083830628257792[0;39m <==        Row: 165082352903655424, 123, null, null, null, 123, null, null, null
+2022-04-01 21:04:12.341 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083830628257792[0;39m <==      Total: 1
+2022-04-01 21:04:12.341 INFO  com.byf.mywiki.service.EbookService               :95   [32m165083830628257792[0;39m 总行数：5
+2022-04-01 21:04:12.342 INFO  com.byf.mywiki.service.EbookService               :96   [32m165083830628257792[0;39m 总页数：3
+2022-04-01 21:04:12.342 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165083830628257792[0;39m 返回结果: {"content":{"list":[{"cover":"123","id":165082352903655424,"name":"123"}],"total":5},"success":true}
+2022-04-01 21:04:12.342 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165083830628257792[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-01 21:04:12.344 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165083830628257792[0;39m ------------- LogFilter 结束 耗时：13 ms -------------
+2022-04-01 21:04:20.118 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165082352895266816[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:04:20.118 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165082352895266816[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:20.118 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165082352895266816[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:20.119 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165083863293497344[0;39m ------------- 开始 -------------
+2022-04-01 21:04:20.120 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165083863293497344[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:20.120 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165083863293497344[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:04:20.120 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165083863293497344[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:20.121 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165083863293497344[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-01 21:04:20.123 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083863293497344[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:04:20.123 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083863293497344[0;39m ==> Parameters: 
+2022-04-01 21:04:20.125 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083863293497344[0;39m <==    Columns: count(0)
+2022-04-01 21:04:20.126 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083863293497344[0;39m <==        Row: 5
+2022-04-01 21:04:20.126 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083863293497344[0;39m <==      Total: 1
+2022-04-01 21:04:20.126 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083863293497344[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 21:04:20.127 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083863293497344[0;39m ==> Parameters: 2(Integer)
+2022-04-01 21:04:20.128 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083863293497344[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:04:20.129 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083863293497344[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 21:04:20.129 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083863293497344[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 21:04:20.129 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083863293497344[0;39m <==      Total: 2
+2022-04-01 21:04:20.130 INFO  com.byf.mywiki.service.EbookService               :95   [32m165083863293497344[0;39m 总行数：5
+2022-04-01 21:04:20.130 INFO  com.byf.mywiki.service.EbookService               :96   [32m165083863293497344[0;39m 总页数：3
+2022-04-01 21:04:20.131 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165083863293497344[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"}],"total":5},"success":true}
+2022-04-01 21:04:20.131 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165083863293497344[0;39m ------------- 结束 耗时：12 ms -------------
+2022-04-01 21:04:20.133 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165083863293497344[0;39m ------------- LogFilter 结束 耗时：15 ms -------------
+2022-04-01 21:04:24.352 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165082353050456064[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:04:24.353 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165082353050456064[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:24.353 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165082353050456064[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:24.354 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165083881056374784[0;39m ------------- 开始 -------------
+2022-04-01 21:04:24.354 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165083881056374784[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:24.354 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165083881056374784[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:04:24.355 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165083881056374784[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:24.355 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165083881056374784[0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-01 21:04:24.357 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083881056374784[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:04:24.358 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083881056374784[0;39m ==> Parameters: 
+2022-04-01 21:04:24.360 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083881056374784[0;39m <==    Columns: count(0)
+2022-04-01 21:04:24.360 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083881056374784[0;39m <==        Row: 5
+2022-04-01 21:04:24.360 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083881056374784[0;39m <==      Total: 1
+2022-04-01 21:04:24.361 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083881056374784[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 21:04:24.361 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083881056374784[0;39m ==> Parameters: 1000(Integer)
+2022-04-01 21:04:24.363 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083881056374784[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:04:24.364 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083881056374784[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 21:04:24.364 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083881056374784[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 21:04:24.364 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083881056374784[0;39m <==        Row: 3, SpringMVC, null, null, java入门, null, null, null, null
+2022-04-01 21:04:24.364 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083881056374784[0;39m <==        Row: 4, Mybatis, null, null, java入门, null, null, null, null
+2022-04-01 21:04:24.365 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083881056374784[0;39m <==        Row: 165082352903655424, 123, null, null, null, 123, null, null, null
+2022-04-01 21:04:24.365 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083881056374784[0;39m <==      Total: 5
+2022-04-01 21:04:24.365 INFO  com.byf.mywiki.service.EbookService               :95   [32m165083881056374784[0;39m 总行数：5
+2022-04-01 21:04:24.365 INFO  com.byf.mywiki.service.EbookService               :96   [32m165083881056374784[0;39m 总页数：1
+2022-04-01 21:04:24.366 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165083881056374784[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"},{"description":"java入门","id":3,"name":"SpringMVC"},{"description":"java入门","id":4,"name":"Mybatis"},{"cover":"123","id":165082352903655424,"name":"123"}],"total":5},"success":true}
+2022-04-01 21:04:24.366 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165083881056374784[0;39m ------------- 结束 耗时：12 ms -------------
+2022-04-01 21:04:24.369 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165083881056374784[0;39m ------------- LogFilter 结束 耗时：16 ms -------------
+2022-04-01 21:04:25.942 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:04:25.942 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:25.942 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:25.943 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165083887721123840[0;39m ------------- 开始 -------------
+2022-04-01 21:04:25.943 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165083887721123840[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:04:25.944 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165083887721123840[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:04:25.944 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165083887721123840[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:04:25.944 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165083887721123840[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-01 21:04:25.946 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083887721123840[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:04:25.946 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083887721123840[0;39m ==> Parameters: 
+2022-04-01 21:04:25.948 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083887721123840[0;39m <==    Columns: count(0)
+2022-04-01 21:04:25.949 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165083887721123840[0;39m <==        Row: 5
+2022-04-01 21:04:25.949 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165083887721123840[0;39m <==      Total: 1
+2022-04-01 21:04:25.949 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083887721123840[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 21:04:25.950 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083887721123840[0;39m ==> Parameters: 2(Integer)
+2022-04-01 21:04:25.951 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083887721123840[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:04:25.952 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083887721123840[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 21:04:25.952 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165083887721123840[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 21:04:25.952 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165083887721123840[0;39m <==      Total: 2
+2022-04-01 21:04:25.952 INFO  com.byf.mywiki.service.EbookService               :95   [32m165083887721123840[0;39m 总行数：5
+2022-04-01 21:04:25.952 INFO  com.byf.mywiki.service.EbookService               :96   [32m165083887721123840[0;39m 总页数：3
+2022-04-01 21:04:25.953 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165083887721123840[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"}],"total":5},"success":true}
+2022-04-01 21:04:25.953 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165083887721123840[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-01 21:04:25.955 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165083887721123840[0;39m ------------- LogFilter 结束 耗时：13 ms -------------
+2022-04-01 21:05:45.861 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165083783136153600[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:05:45.861 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165083783136153600[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:05:45.861 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165083783136153600[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:05:45.862 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165084222925705216[0;39m ------------- 开始 -------------
+2022-04-01 21:05:45.862 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165084222925705216[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:05:45.862 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165084222925705216[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:05:45.862 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165084222925705216[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:05:45.862 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165084222925705216[0;39m 请求参数: [{"page":1,"size":1000}]
+2022-04-01 21:05:45.864 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165084222925705216[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:05:45.865 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165084222925705216[0;39m ==> Parameters: 
+2022-04-01 21:05:45.867 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165084222925705216[0;39m <==    Columns: count(0)
+2022-04-01 21:05:45.867 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165084222925705216[0;39m <==        Row: 5
+2022-04-01 21:05:45.867 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165084222925705216[0;39m <==      Total: 1
+2022-04-01 21:05:45.868 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165084222925705216[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 21:05:45.868 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165084222925705216[0;39m ==> Parameters: 1000(Integer)
+2022-04-01 21:05:45.870 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165084222925705216[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:05:45.870 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165084222925705216[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 21:05:45.870 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165084222925705216[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 21:05:45.870 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165084222925705216[0;39m <==        Row: 3, SpringMVC, null, null, java入门, null, null, null, null
+2022-04-01 21:05:45.871 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165084222925705216[0;39m <==        Row: 4, Mybatis, null, null, java入门, null, null, null, null
+2022-04-01 21:05:45.871 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165084222925705216[0;39m <==        Row: 165082352903655424, 123, null, null, null, 123, null, null, null
+2022-04-01 21:05:45.871 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165084222925705216[0;39m <==      Total: 5
+2022-04-01 21:05:45.871 INFO  com.byf.mywiki.service.EbookService               :95   [32m165084222925705216[0;39m 总行数：5
+2022-04-01 21:05:45.871 INFO  com.byf.mywiki.service.EbookService               :96   [32m165084222925705216[0;39m 总页数：1
+2022-04-01 21:05:45.872 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165084222925705216[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"},{"description":"java入门","id":3,"name":"SpringMVC"},{"description":"java入门","id":4,"name":"Mybatis"},{"cover":"123","id":165082352903655424,"name":"123"}],"total":5},"success":true}
+2022-04-01 21:05:45.872 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165084222925705216[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-01 21:05:45.875 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165084222925705216[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-01 21:05:46.819 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m165083796121718784[0;39m ------------- LogFilter 开始 -------------
+2022-04-01 21:05:46.819 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m165083796121718784[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:05:46.819 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m165083796121718784[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:05:46.820 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m165084226943848448[0;39m ------------- 开始 -------------
+2022-04-01 21:05:46.820 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m165084226943848448[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-01 21:05:46.820 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m165084226943848448[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-01 21:05:46.820 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m165084226943848448[0;39m 远程地址: 127.0.0.1
+2022-04-01 21:05:46.820 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m165084226943848448[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-01 21:05:46.823 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165084226943848448[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-01 21:05:46.823 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165084226943848448[0;39m ==> Parameters: 
+2022-04-01 21:05:46.826 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165084226943848448[0;39m <==    Columns: count(0)
+2022-04-01 21:05:46.826 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m165084226943848448[0;39m <==        Row: 5
+2022-04-01 21:05:46.826 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m165084226943848448[0;39m <==      Total: 1
+2022-04-01 21:05:46.827 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165084226943848448[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-01 21:05:46.827 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165084226943848448[0;39m ==> Parameters: 2(Integer)
+2022-04-01 21:05:46.830 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165084226943848448[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-01 21:05:46.830 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165084226943848448[0;39m <==        Row: 1, Springboot, null, null, java入门, /image/cover1.png, null, null, null
+2022-04-01 21:05:46.830 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m165084226943848448[0;39m <==        Row: 2, Spring, null, null, java入2, /image/cover2.png, null, null, null
+2022-04-01 21:05:46.830 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m165084226943848448[0;39m <==      Total: 2
+2022-04-01 21:05:46.831 INFO  com.byf.mywiki.service.EbookService               :95   [32m165084226943848448[0;39m 总行数：5
+2022-04-01 21:05:46.831 INFO  com.byf.mywiki.service.EbookService               :96   [32m165084226943848448[0;39m 总页数：3
+2022-04-01 21:05:46.831 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m165084226943848448[0;39m 返回结果: {"content":{"list":[{"cover":"/image/cover1.png","description":"java入门","id":1,"name":"Springboot"},{"cover":"/image/cover2.png","description":"java入2","id":2,"name":"Spring"}],"total":5},"success":true}
+2022-04-01 21:05:46.831 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m165084226943848448[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-01 21:05:46.834 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m165084226943848448[0;39m ------------- LogFilter 结束 耗时：15 ms -------------
