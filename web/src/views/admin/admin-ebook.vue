@@ -32,9 +32,9 @@
         <template #cover="{ text: cover }">
           <img v-if="cover" :src="cover" alt="avatar" />
         </template>
-        <template v-slot:category="{ text, record }">
-          <span>{{ getCategoryName(record.category1Id) }} / {{ getCategoryName(record.category2Id) }}</span>
-        </template>
+<!--        <template v-slot:category="{ text, record }">-->
+<!--          <span>{{ getCategoryName(record.category1Id) }} / {{ getCategoryName(record.category2Id) }}</span>-->
+<!--        </template>-->
         <template v-slot:action="{ text, record }">
           <a-space size="small">
             <router-link :to="'/admin/doc?ebookId=' + record.id">
@@ -102,7 +102,7 @@ export default defineComponent({
     const ebooks = ref();
     const pagination = ref({
       current: 1,
-      pageSize: 10,
+      pageSize: 2,
       total: 0
     });
     const loading = ref(false);
@@ -269,22 +269,13 @@ export default defineComponent({
     //   });
     // };
 
-    const getCategoryName = (cid: number) => {
-      // console.log(cid)
-      let result = "";
-      categorys.forEach((item: any) => {
-        if (item.id === cid) {
-          // return item.name; // 注意，这里直接return不起作用
-          result = item.name;
-        }
-      });
-      return result;
-    };
 
     onMounted(() => {
       // handleQueryCategory();
       handleQuery({
+        // page和后端实体类名字相同
         page: pagination.value.current,
+        //
         size: pagination.value.pageSize,
       });
     });
@@ -297,7 +288,6 @@ export default defineComponent({
       loading,
       handleTableChange,
       handleQuery,
-      getCategoryName,
 
       // edit,
       // add,
@@ -305,11 +295,8 @@ export default defineComponent({
       ebook,
       modalVisible,
       modalLoading,
-      handleModalOk,
       categoryIds,
       level1,
-
-      handleDelete
     }
   }
 });
