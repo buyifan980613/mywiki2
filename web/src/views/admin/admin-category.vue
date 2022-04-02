@@ -185,7 +185,7 @@
        */
       const edit = (record: any) => {
         modalVisible.value = true;
-        category.value = Tool.copy(record);
+        // category.value = Tool.copy(record);
       };
 
       /**
