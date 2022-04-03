@@ -60,3 +60,10 @@ create table doc
     vote_count int,
     primary key (id)
 )engine=innodb default charset =utf8mb4;
+
+insert into doc values (1,1,0,1,1,1,1);
+insert into doc values (2,2,1,1,1,1,1);
+insert into doc values (3,3,2,1,1,1,1);
+insert into doc values (4,4,1,1,1,1,1);
+insert into doc values (5,5,0,1,1,1,1);
+insert into doc values (6,6,1,1,1,1,1);

@@ -4,7 +4,7 @@
       :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
     >
       <p>
-        <a-form layout="inline" :model="param">
+        <a-form layout="inline" >
           <a-form-item>
             <a-button type="primary" @click="handleQuery()">
               查询
