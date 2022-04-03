@@ -47,3 +47,16 @@ create  table category (
 insert into  category(category.id, category.parent, category.name, category.sort) values (100,000,'前端开发',100);
 insert into  category(category.id, category.parent, category.name, category.sort) values (101,100,'vue',101);
 insert into  category(category.id, category.parent, category.name, category.sort) values (102,100,'vue2',102);
+
+
+create table doc
+(
+    id         bigint      not null comment 'id',
+    ebook_id   bigint      not null default 0,
+    parent     bigint      not null default 0 comment '父',
+    name       varchar(50) not null,
+    sort       int,
+    view_count int,
+    vote_count int,
+    primary key (id)
+)engine=innodb default charset =utf8mb4;
