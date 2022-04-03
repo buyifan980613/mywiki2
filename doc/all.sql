@@ -67,3 +67,19 @@ insert into doc values (3,3,2,1,1,1,1);
 insert into doc values (4,4,1,1,1,1,1);
 insert into doc values (5,5,0,1,1,1,1);
 insert into doc values (6,6,1,1,1,1,1);
+
+
+create table  content (
+    id bigint not null,
+    content mediumtext not null,
+    primary key (id)
+)engine =innodb default charset  = utf8mb4;
+
+create table  user (
+                          id bigint not null,
+                          login_name varchar(50) not null,
+                          name varchar(50) not null,
+                          password char(32) not null,
+                          primary key (id),
+                          unique key login_name_unique (login_name)
+)engine =innodb default charset  = utf8mb4;
