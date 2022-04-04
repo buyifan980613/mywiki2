@@ -20,13 +20,22 @@ public class DocController {
     @Resource
     private DocService docService;
 
-    @GetMapping("/all")
-    public CommonResp all() {
+//    @GetMapping("/all")
+//    public CommonResp all() {
+//        CommonResp<List<DocQueryResp>> resp = new CommonResp<>();
+//        List<DocQueryResp> list = docService.all();
+//        resp.setContent(list);
+//        return resp;
+//    }
+
+    @GetMapping("/all/{ebookId}")
+    public CommonResp all(@PathVariable Long ebookId) {
         CommonResp<List<DocQueryResp>> resp = new CommonResp<>();
-        List<DocQueryResp> list = docService.all();
+        List<DocQueryResp> list = docService.all(ebookId);
         resp.setContent(list);
         return resp;
     }
+
 
     @GetMapping("/list")
     public CommonResp list(@Valid DocQueryReq req) {
@@ -57,4 +66,23 @@ public class DocController {
         docService.delete(list);
         return resp;
     }
+
+    @GetMapping("/find-content/{id}")
+    public CommonResp findContent(@PathVariable Long id) {
+        CommonResp<String> resp = new CommonResp<>();
+        String content = docService.findContent(id);
+        resp.setContent(content);
+        return resp;
+    }
+
+//    @GetMapping("/vote/{id}")
+//    public CommonResp vote(@PathVariable Long id) {
+//        CommonResp commonResp = new CommonResp();
+//        docService.vote(id);
+//        return commonResp;
+//    }
+
+
+
+
 }

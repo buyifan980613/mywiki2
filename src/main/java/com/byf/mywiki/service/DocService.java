@@ -1,7 +1,9 @@
 package com.byf.mywiki.service;
 
+import com.byf.mywiki.domain.Content;
 import com.byf.mywiki.domain.Doc;
 import com.byf.mywiki.domain.DocExample;
+import com.byf.mywiki.mapper.ContentMapper;
 import com.byf.mywiki.mapper.DocMapper;
 import com.byf.mywiki.req.DocQueryReq;
 import com.byf.mywiki.req.DocSaveReq;
@@ -24,22 +26,39 @@ public class DocService {
 
     private static final Logger LOG = LoggerFactory.getLogger(DocService.class);
 
+
+    @Resource
+    private ContentMapper contentMapper;
+
     @Resource
     private DocMapper docMapper;
 
     @Resource
     private SnowFlake snowFlake;
 
-    public List<DocQueryResp> all() {
+//    public List<DocQueryResp> all() {
+//        DocExample docExample = new DocExample();
+//        docExample.setOrderByClause("sort asc");
+//        List<Doc> docList = docMapper.selectByExample(docExample);
+//
+//        // 列表复制
+//        List<DocQueryResp> list = CopyUtil.copyList(docList, DocQueryResp.class);
+//
+//        return list;
+//    }
+    public List<DocQueryResp> all(Long ebookId) {
         DocExample docExample = new DocExample();
+        docExample.createCriteria().andEbookIdEqualTo(ebookId);
         docExample.setOrderByClause("sort asc");
         List<Doc> docList = docMapper.selectByExample(docExample);
 
         // 列表复制
         List<DocQueryResp> list = CopyUtil.copyList(docList, DocQueryResp.class);
 
-        return list;
-    }
+    return list;
+}
+
+
 
     public PageResp<DocQueryResp> list(DocQueryReq req) {
         DocExample docExample = new DocExample();
@@ -77,26 +96,45 @@ public class DocService {
      */
     public void save(DocSaveReq req) {
         Doc doc = CopyUtil.copy(req, Doc.class);
+        Content content = CopyUtil.copy(req, Content.class);
         if (ObjectUtils.isEmpty(req.getId())) {
             // 新增
             doc.setId(snowFlake.nextId());
             doc.setViewCount(0);
             doc.setVoteCount(0);
             docMapper.insert(doc);
+
+            content.setId(doc.getId());
+            contentMapper.insert(content);
         } else {
             // 更新
             docMapper.updateByPrimaryKey(doc);
+            int count = contentMapper.updateByPrimaryKeyWithBLOBs(content);
+            if (count == 0) {
+                contentMapper.insert(content);
+            }
         }
     }
 
-    public void delete(Long id) {
-        docMapper.deleteByPrimaryKey(id);
-    }
+//    public void delete(Long id) {
+//        docMapper.deleteByPrimaryKey(id);
+//    }
 
     public void delete(List<String> ids) {
         DocExample docExample = new DocExample();
         DocExample.Criteria criteria = docExample.createCriteria();
         criteria.andIdIn(ids);
         docMapper.deleteByExample(docExample);
+    }
+
+    public String findContent(Long id) {
+        Content content = contentMapper.selectByPrimaryKey(id);
+        // 文档阅读数+1
+//        docMapperCust.increaseViewCount(id);
+        if (ObjectUtils.isEmpty(content)) {
+            return "";
+        } else {
+            return content.getContent();
+        }
     }
 }

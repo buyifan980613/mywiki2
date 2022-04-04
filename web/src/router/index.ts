@@ -7,6 +7,7 @@ import AdminCategory from '../views/admin/admin-category.vue'
 import AdminDoc from '../views/admin/admin-doc.vue'
 import store from "@/store";
 import {Tool} from "@/util/tool";
+import doc from "@/views/doc.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -17,6 +18,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/doc',
+    name: 'Doc',
+    component: doc
   },
   {
     path: '/admin/user',
