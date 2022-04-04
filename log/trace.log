@@ -2331,3 +2331,1114 @@ Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'id
 2022-04-04 14:13:32.915 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166067648969445376[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
 2022-04-04 14:13:32.916 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166067648969445376[0;39m ------------- 结束 耗时：14 ms -------------
 2022-04-04 14:13:32.919 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067648969445376[0;39m ------------- LogFilter 结束 耗时：18 ms -------------
+2022-04-04 14:13:43.310 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:13:43.310 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:13:43.310 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:43.311 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166067692627955712[0;39m ------------- 开始 -------------
+2022-04-04 14:13:43.311 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166067692627955712[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:13:43.311 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166067692627955712[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:13:43.312 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166067692627955712[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:43.312 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166067692627955712[0;39m 请求参数: []
+2022-04-04 14:13:43.314 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067692627955712[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:13:43.314 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067692627955712[0;39m ==> Parameters: 
+2022-04-04 14:13:43.317 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067692627955712[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:13:43.317 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067692627955712[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:13:43.317 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067692627955712[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:13:43.318 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067692627955712[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:13:43.318 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067692627955712[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:13:43.318 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067692627955712[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:13:43.318 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067692627955712[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:13:43.318 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067692627955712[0;39m <==      Total: 6
+2022-04-04 14:13:43.319 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166067692627955712[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:13:43.319 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166067692627955712[0;39m ------------- 结束 耗时：8 ms -------------
+2022-04-04 14:13:43.321 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067692627955712[0;39m ------------- LogFilter 结束 耗时：10 ms -------------
+2022-04-04 14:13:45.859 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:13:45.859 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/login OPTIONS
+2022-04-04 14:13:45.859 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:45.860 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-04-04 14:13:45.863 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067533642862592[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:13:45.863 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067533642862592[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2022-04-04 14:13:45.863 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067533642862592[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:45.864 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166067703336013824[0;39m ------------- 开始 -------------
+2022-04-04 14:13:45.864 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166067703336013824[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2022-04-04 14:13:45.864 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166067703336013824[0;39m 类名方法: com.byf.mywiki.controller.UserController.login
+2022-04-04 14:13:45.864 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166067703336013824[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:45.864 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166067703336013824[0;39m 请求参数: [{"loginName":"byf2"}]
+2022-04-04 14:13:45.866 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067703336013824[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2022-04-04 14:13:45.867 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067703336013824[0;39m ==> Parameters: byf2(String)
+2022-04-04 14:13:45.868 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166067703336013824[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:13:45.868 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166067703336013824[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:13:45.868 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067703336013824[0;39m <==      Total: 1
+2022-04-04 14:13:45.869 INFO  com.byf.mywiki.controller.UserController          :118  [32m166067703336013824[0;39m 生成单点登录token：166067703356985344，并放入redis中
+2022-04-04 14:13:45.875 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166067703336013824[0;39m 返回结果: {"content":{"id":166034471647318016,"loginName":"byf2","name":"byf","token":"166067703356985344"},"success":true}
+2022-04-04 14:13:45.875 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166067703336013824[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-04 14:13:45.877 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067703336013824[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-04 14:13:51.559 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067536360771584[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:13:51.559 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067536360771584[0;39m 请求地址: http://127.0.0.1:8880/user/logout/166067703356985344 GET
+2022-04-04 14:13:51.559 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067536360771584[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:51.561 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166067727226769408[0;39m ------------- 开始 -------------
+2022-04-04 14:13:51.561 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166067727226769408[0;39m 请求地址: http://127.0.0.1:8880/user/logout/166067703356985344 GET
+2022-04-04 14:13:51.561 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166067727226769408[0;39m 类名方法: com.byf.mywiki.controller.UserController.logout
+2022-04-04 14:13:51.561 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166067727226769408[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:51.561 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166067727226769408[0;39m 请求参数: ["166067703356985344"]
+2022-04-04 14:13:51.569 INFO  com.byf.mywiki.controller.UserController          :130  [32m166067727226769408[0;39m 从redis中删除token: 166067703356985344
+2022-04-04 14:13:51.570 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166067727226769408[0;39m 返回结果: {"success":true}
+2022-04-04 14:13:51.570 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166067727226769408[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-04 14:13:51.571 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067727226769408[0;39m ------------- LogFilter 结束 耗时：12 ms -------------
+2022-04-04 14:13:54.311 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067540894814208[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:13:54.312 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067540894814208[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2022-04-04 14:13:54.312 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067540894814208[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:54.313 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166067738773688320[0;39m ------------- 开始 -------------
+2022-04-04 14:13:54.313 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166067738773688320[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2022-04-04 14:13:54.313 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166067738773688320[0;39m 类名方法: com.byf.mywiki.controller.UserController.login
+2022-04-04 14:13:54.313 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166067738773688320[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:54.314 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166067738773688320[0;39m 请求参数: [{"loginName":"byf2"}]
+2022-04-04 14:13:54.318 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067738773688320[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2022-04-04 14:13:54.319 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067738773688320[0;39m ==> Parameters: byf2(String)
+2022-04-04 14:13:54.321 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166067738773688320[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:13:54.321 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166067738773688320[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:13:54.321 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067738773688320[0;39m <==      Total: 1
+2022-04-04 14:13:54.322 INFO  com.byf.mywiki.service.UserService                :184  [32m166067738773688320[0;39m 密码不对, 输入密码：639e6a8db30b7a0eab25dbe7302e1307, 数据库密码：4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:13:54.323 WARN  c.byf.mywiki.controller.ControllerExceptionHandler:45   [32m166067738773688320[0;39m 业务异常：用户名不存在或密码错误
+2022-04-04 14:13:54.324 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :207  [32m166067738773688320[0;39m Resolved [com.byf.mywiki.exception.BusinessException: 用户名不存在或密码错误]
+2022-04-04 14:13:54.324 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067738773688320[0;39m ------------- LogFilter 结束 耗时：12 ms -------------
+2022-04-04 14:13:59.455 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067543281373184[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:13:59.456 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067543281373184[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2022-04-04 14:13:59.456 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067543281373184[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:59.457 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166067760349188096[0;39m ------------- 开始 -------------
+2022-04-04 14:13:59.457 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166067760349188096[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2022-04-04 14:13:59.457 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166067760349188096[0;39m 类名方法: com.byf.mywiki.controller.UserController.login
+2022-04-04 14:13:59.457 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166067760349188096[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:13:59.457 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166067760349188096[0;39m 请求参数: [{"loginName":"byf2"}]
+2022-04-04 14:13:59.459 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067760349188096[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2022-04-04 14:13:59.459 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067760349188096[0;39m ==> Parameters: byf2(String)
+2022-04-04 14:13:59.460 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166067760349188096[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:13:59.461 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166067760349188096[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:13:59.461 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067760349188096[0;39m <==      Total: 1
+2022-04-04 14:13:59.461 INFO  com.byf.mywiki.controller.UserController          :118  [32m166067760349188096[0;39m 生成单点登录token：166067760365965312，并放入redis中
+2022-04-04 14:13:59.468 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166067760349188096[0;39m 返回结果: {"content":{"id":166034471647318016,"loginName":"byf2","name":"byf","token":"166067760365965312"},"success":true}
+2022-04-04 14:13:59.468 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166067760349188096[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-04 14:13:59.470 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067760349188096[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-04 14:14:03.213 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:14:03.213 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:14:03.213 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:14:03.214 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166067776107188224[0;39m ------------- 开始 -------------
+2022-04-04 14:14:03.214 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166067776107188224[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:14:03.215 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166067776107188224[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:14:03.215 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166067776107188224[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:14:03.215 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166067776107188224[0;39m 请求参数: []
+2022-04-04 14:14:03.219 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067776107188224[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:14:03.220 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067776107188224[0;39m ==> Parameters: 
+2022-04-04 14:14:03.221 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067776107188224[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:14:03.222 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067776107188224[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:14:03.222 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067776107188224[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:14:03.222 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067776107188224[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:14:03.222 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067776107188224[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:14:03.223 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067776107188224[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:14:03.223 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067776107188224[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:14:03.223 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067776107188224[0;39m <==      Total: 6
+2022-04-04 14:14:03.223 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166067776107188224[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:14:03.224 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166067776107188224[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-04 14:14:03.225 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067776107188224[0;39m ------------- LogFilter 结束 耗时：11 ms -------------
+2022-04-04 14:14:08.708 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067648969445376[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:14:08.709 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067648969445376[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:14:08.709 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067648969445376[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:14:08.710 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166067799159083008[0;39m ------------- 开始 -------------
+2022-04-04 14:14:08.710 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166067799159083008[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:14:08.710 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166067799159083008[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:14:08.710 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166067799159083008[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:14:08.710 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166067799159083008[0;39m 请求参数: []
+2022-04-04 14:14:08.712 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067799159083008[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:14:08.713 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067799159083008[0;39m ==> Parameters: 
+2022-04-04 14:14:08.716 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067799159083008[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:14:08.716 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067799159083008[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:14:08.717 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067799159083008[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:14:08.717 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067799159083008[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:14:08.717 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067799159083008[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:14:08.717 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067799159083008[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:14:08.718 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067799159083008[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:14:08.718 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067799159083008[0;39m <==      Total: 6
+2022-04-04 14:14:08.718 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166067799159083008[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:14:08.719 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166067799159083008[0;39m ------------- 结束 耗时：9 ms -------------
+2022-04-04 14:14:08.722 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067799159083008[0;39m ------------- LogFilter 结束 耗时：13 ms -------------
+2022-04-04 14:14:51.290 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:14:51.291 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:14:51.291 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:14:51.291 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166067977756741632[0;39m ------------- 开始 -------------
+2022-04-04 14:14:51.291 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166067977756741632[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:14:51.291 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166067977756741632[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:14:51.292 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166067977756741632[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:14:51.292 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166067977756741632[0;39m 请求参数: []
+2022-04-04 14:14:51.297 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067977756741632[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:14:51.297 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067977756741632[0;39m ==> Parameters: 
+2022-04-04 14:14:51.299 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067977756741632[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:14:51.299 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067977756741632[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:14:51.300 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067977756741632[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:14:51.300 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067977756741632[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:14:51.300 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067977756741632[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:14:51.300 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067977756741632[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:14:51.301 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166067977756741632[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:14:51.301 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166067977756741632[0;39m <==      Total: 6
+2022-04-04 14:14:51.302 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166067977756741632[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:14:51.303 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166067977756741632[0;39m ------------- 结束 耗时：12 ms -------------
+2022-04-04 14:14:51.306 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067977756741632[0;39m ------------- LogFilter 结束 耗时：15 ms -------------
+2022-04-04 14:14:53.684 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067692627955712[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:14:53.684 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067692627955712[0;39m 请求地址: http://127.0.0.1:8880/user/login OPTIONS
+2022-04-04 14:14:53.684 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067692627955712[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:14:53.685 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067692627955712[0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-04-04 14:14:53.690 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067692627955712[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:14:53.690 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067692627955712[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2022-04-04 14:14:53.690 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067692627955712[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:14:53.691 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166067987823071232[0;39m ------------- 开始 -------------
+2022-04-04 14:14:53.691 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166067987823071232[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2022-04-04 14:14:53.691 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166067987823071232[0;39m 类名方法: com.byf.mywiki.controller.UserController.login
+2022-04-04 14:14:53.691 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166067987823071232[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:14:53.692 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166067987823071232[0;39m 请求参数: [{"loginName":"byf2"}]
+2022-04-04 14:14:53.693 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067987823071232[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2022-04-04 14:14:53.694 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067987823071232[0;39m ==> Parameters: byf2(String)
+2022-04-04 14:14:53.695 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166067987823071232[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:14:53.695 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166067987823071232[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:14:53.696 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166067987823071232[0;39m <==      Total: 1
+2022-04-04 14:14:53.696 INFO  com.byf.mywiki.controller.UserController          :118  [32m166067987823071232[0;39m 生成单点登录token：166067987844042752，并放入redis中
+2022-04-04 14:14:53.702 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166067987823071232[0;39m 返回结果: {"content":{"id":166034471647318016,"loginName":"byf2","name":"byf","token":"166067987844042752"},"success":true}
+2022-04-04 14:14:53.702 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166067987823071232[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-04 14:14:53.704 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166067987823071232[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-04 14:15:03.001 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:15:03.001 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:15:03.001 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:15:03.003 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068026880430080[0;39m ------------- 开始 -------------
+2022-04-04 14:15:03.003 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068026880430080[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:15:03.003 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068026880430080[0;39m 类名方法: com.byf.mywiki.controller.UserController.list
+2022-04-04 14:15:03.003 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068026880430080[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:15:03.003 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068026880430080[0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-04 14:15:03.005 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166068026880430080[0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-04-04 14:15:03.006 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166068026880430080[0;39m ==> Parameters: 
+2022-04-04 14:15:03.008 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166068026880430080[0;39m <==    Columns: count(0)
+2022-04-04 14:15:03.008 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166068026880430080[0;39m <==        Row: 2
+2022-04-04 14:15:03.008 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166068026880430080[0;39m <==      Total: 1
+2022-04-04 14:15:03.009 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068026880430080[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-04-04 14:15:03.009 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068026880430080[0;39m ==> Parameters: 10(Integer)
+2022-04-04 14:15:03.011 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068026880430080[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:15:03.012 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068026880430080[0;39m <==        Row: 1, byf, byf, 7354a1d413535a6c0dc5c209e198d799
+2022-04-04 14:15:03.012 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068026880430080[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:15:03.013 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068026880430080[0;39m <==      Total: 2
+2022-04-04 14:15:03.013 INFO  com.byf.mywiki.service.UserService                :97   [32m166068026880430080[0;39m 总行数：2
+2022-04-04 14:15:03.013 INFO  com.byf.mywiki.service.UserService                :98   [32m166068026880430080[0;39m 总页数：1
+2022-04-04 14:15:03.013 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068026880430080[0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"byf","name":"byf"},{"id":166034471647318016,"loginName":"byf2","name":"byf"}],"total":2},"success":true}
+2022-04-04 14:15:03.013 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068026880430080[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-04 14:15:03.017 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068026880430080[0;39m ------------- LogFilter 结束 耗时：15 ms -------------
+2022-04-04 14:18:10.049 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067727226769408[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:10.049 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067727226769408[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:18:10.049 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067727226769408[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:10.050 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068811412410368[0;39m ------------- 开始 -------------
+2022-04-04 14:18:10.050 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068811412410368[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:18:10.051 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068811412410368[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:18:10.051 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068811412410368[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:10.051 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068811412410368[0;39m 请求参数: []
+2022-04-04 14:18:10.053 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068811412410368[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:18:10.054 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068811412410368[0;39m ==> Parameters: 
+2022-04-04 14:18:10.056 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068811412410368[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:18:10.056 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068811412410368[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:18:10.057 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068811412410368[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:18:10.057 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068811412410368[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:18:10.057 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068811412410368[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:18:10.057 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068811412410368[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:18:10.058 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068811412410368[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:18:10.058 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068811412410368[0;39m <==      Total: 6
+2022-04-04 14:18:10.059 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068811412410368[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:18:10.059 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068811412410368[0;39m ------------- 结束 耗时：9 ms -------------
+2022-04-04 14:18:10.064 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068811412410368[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-04 14:18:12.726 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067738773688320[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:12.726 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067738773688320[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2022-04-04 14:18:12.726 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067738773688320[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:12.727 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068822640562176[0;39m ------------- 开始 -------------
+2022-04-04 14:18:12.727 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068822640562176[0;39m 请求地址: http://127.0.0.1:8880/user/login POST
+2022-04-04 14:18:12.728 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068822640562176[0;39m 类名方法: com.byf.mywiki.controller.UserController.login
+2022-04-04 14:18:12.728 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068822640562176[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:12.728 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068822640562176[0;39m 请求参数: [{"loginName":"byf2"}]
+2022-04-04 14:18:12.730 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068822640562176[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? )
+2022-04-04 14:18:12.730 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068822640562176[0;39m ==> Parameters: byf2(String)
+2022-04-04 14:18:12.731 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068822640562176[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:18:12.731 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068822640562176[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:18:12.732 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068822640562176[0;39m <==      Total: 1
+2022-04-04 14:18:12.732 INFO  com.byf.mywiki.controller.UserController          :118  [32m166068822640562176[0;39m 生成单点登录token：166068822661533696，并放入redis中
+2022-04-04 14:18:12.740 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068822640562176[0;39m 返回结果: {"content":{"id":166034471647318016,"loginName":"byf2","name":"byf","token":"166068822661533696"},"success":true}
+2022-04-04 14:18:12.740 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068822640562176[0;39m ------------- 结束 耗时：13 ms -------------
+2022-04-04 14:18:12.743 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068822640562176[0;39m ------------- LogFilter 结束 耗时：17 ms -------------
+2022-04-04 14:18:14.062 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067760349188096[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:14.062 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067760349188096[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:18:14.063 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067760349188096[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:14.063 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068828244152320[0;39m ------------- 开始 -------------
+2022-04-04 14:18:14.064 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068828244152320[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:18:14.064 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068828244152320[0;39m 类名方法: com.byf.mywiki.controller.UserController.list
+2022-04-04 14:18:14.064 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068828244152320[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:14.064 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068828244152320[0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-04 14:18:14.066 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166068828244152320[0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-04-04 14:18:14.066 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166068828244152320[0;39m ==> Parameters: 
+2022-04-04 14:18:14.068 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166068828244152320[0;39m <==    Columns: count(0)
+2022-04-04 14:18:14.068 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166068828244152320[0;39m <==        Row: 2
+2022-04-04 14:18:14.068 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166068828244152320[0;39m <==      Total: 1
+2022-04-04 14:18:14.068 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068828244152320[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-04-04 14:18:14.069 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068828244152320[0;39m ==> Parameters: 10(Integer)
+2022-04-04 14:18:14.071 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068828244152320[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:18:14.071 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068828244152320[0;39m <==        Row: 1, byf, byf, 7354a1d413535a6c0dc5c209e198d799
+2022-04-04 14:18:14.072 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068828244152320[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:18:14.072 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068828244152320[0;39m <==      Total: 2
+2022-04-04 14:18:14.072 INFO  com.byf.mywiki.service.UserService                :97   [32m166068828244152320[0;39m 总行数：2
+2022-04-04 14:18:14.073 INFO  com.byf.mywiki.service.UserService                :98   [32m166068828244152320[0;39m 总页数：1
+2022-04-04 14:18:14.073 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068828244152320[0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"byf","name":"byf"},{"id":166034471647318016,"loginName":"byf2","name":"byf"}],"total":2},"success":true}
+2022-04-04 14:18:14.073 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068828244152320[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-04 14:18:14.076 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068828244152320[0;39m ------------- LogFilter 结束 耗时：13 ms -------------
+2022-04-04 14:18:14.689 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067776107188224[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:14.689 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067776107188224[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:18:14.689 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067776107188224[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:14.689 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068830869786624[0;39m ------------- 开始 -------------
+2022-04-04 14:18:14.690 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068830869786624[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:18:14.690 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068830869786624[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:18:14.690 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068830869786624[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:14.691 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068830869786624[0;39m 请求参数: []
+2022-04-04 14:18:14.692 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067556082388992[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:14.692 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067556082388992[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:18:14.692 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067556082388992[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:14.692 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068830869786624[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:18:14.693 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068830869786624[0;39m ==> Parameters: 
+2022-04-04 14:18:14.694 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068830869786624[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:18:14.694 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068830869786624[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:18:14.695 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068830869786624[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:18:14.695 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068830869786624[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:18:14.695 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068830869786624[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:18:14.695 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068830869786624[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:18:14.696 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068830869786624[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:18:14.696 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068830869786624[0;39m <==      Total: 6
+2022-04-04 14:18:14.696 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068830869786624[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:18:14.696 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068830869786624[0;39m ------------- 结束 耗时：7 ms -------------
+2022-04-04 14:18:14.699 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068830869786624[0;39m ------------- LogFilter 结束 耗时：10 ms -------------
+2022-04-04 14:18:14.702 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068830924312576[0;39m ------------- 开始 -------------
+2022-04-04 14:18:14.703 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068830924312576[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:18:14.703 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068830924312576[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:18:14.703 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068830924312576[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:14.704 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068830924312576[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:18:14.709 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068830924312576[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:18:14.709 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068830924312576[0;39m ==> Parameters: 
+2022-04-04 14:18:14.711 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166068830924312576[0;39m <==    Columns: count(0)
+2022-04-04 14:18:14.711 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166068830924312576[0;39m <==        Row: 4
+2022-04-04 14:18:14.712 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068830924312576[0;39m <==      Total: 1
+2022-04-04 14:18:14.712 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068830924312576[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:18:14.713 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068830924312576[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:18:14.715 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068830924312576[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:18:14.715 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068830924312576[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:18:14.715 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068830924312576[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:18:14.715 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068830924312576[0;39m <==      Total: 2
+2022-04-04 14:18:14.716 INFO  com.byf.mywiki.service.EbookService               :95   [32m166068830924312576[0;39m 总行数：4
+2022-04-04 14:18:14.716 INFO  com.byf.mywiki.service.EbookService               :96   [32m166068830924312576[0;39m 总页数：2
+2022-04-04 14:18:14.721 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068830924312576[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:18:14.721 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068830924312576[0;39m ------------- 结束 耗时：19 ms -------------
+2022-04-04 14:18:14.722 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068830924312576[0;39m ------------- LogFilter 结束 耗时：30 ms -------------
+2022-04-04 14:18:14.724 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067799159083008[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:14.724 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067799159083008[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:18:14.725 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067799159083008[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:14.726 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068831024975872[0;39m ------------- 开始 -------------
+2022-04-04 14:18:14.726 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068831024975872[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:18:14.726 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068831024975872[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:18:14.726 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068831024975872[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:14.726 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068831024975872[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:18:14.727 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068831024975872[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:18:14.728 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068831024975872[0;39m ==> Parameters: 
+2022-04-04 14:18:14.729 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166068831024975872[0;39m <==    Columns: count(0)
+2022-04-04 14:18:14.730 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166068831024975872[0;39m <==        Row: 4
+2022-04-04 14:18:14.730 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068831024975872[0;39m <==      Total: 1
+2022-04-04 14:18:14.730 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068831024975872[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:18:14.730 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068831024975872[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:18:14.732 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068831024975872[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:18:14.732 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068831024975872[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:18:14.733 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068831024975872[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:18:14.733 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068831024975872[0;39m <==      Total: 2
+2022-04-04 14:18:14.734 INFO  com.byf.mywiki.service.EbookService               :95   [32m166068831024975872[0;39m 总行数：4
+2022-04-04 14:18:14.734 INFO  com.byf.mywiki.service.EbookService               :96   [32m166068831024975872[0;39m 总页数：2
+2022-04-04 14:18:14.734 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068831024975872[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:18:14.734 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068831024975872[0;39m ------------- 结束 耗时：8 ms -------------
+2022-04-04 14:18:14.735 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068831024975872[0;39m ------------- LogFilter 结束 耗时：10 ms -------------
+2022-04-04 14:18:15.101 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067977756741632[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:15.101 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067977756741632[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:18:15.102 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067977756741632[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:15.102 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068832602034176[0;39m ------------- 开始 -------------
+2022-04-04 14:18:15.102 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068832602034176[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:18:15.103 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068832602034176[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:18:15.103 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068832602034176[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:15.103 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068832602034176[0;39m 请求参数: []
+2022-04-04 14:18:15.103 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068832602034176[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:18:15.103 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068832602034176[0;39m ==> Parameters: 
+2022-04-04 14:18:15.105 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068832602034176[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:18:15.105 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068832602034176[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:18:15.106 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068832602034176[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:18:15.106 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068832602034176[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:18:15.106 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068832602034176[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:18:15.107 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068832602034176[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:18:15.107 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068832602034176[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:18:15.107 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068832602034176[0;39m <==      Total: 6
+2022-04-04 14:18:15.108 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068832602034176[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:18:15.108 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068832602034176[0;39m ------------- 结束 耗时：6 ms -------------
+2022-04-04 14:18:15.109 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068832602034176[0;39m ------------- LogFilter 结束 耗时：7 ms -------------
+2022-04-04 14:18:16.646 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067987823071232[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:16.646 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067987823071232[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:18:16.646 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067987823071232[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:16.647 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068839082233856[0;39m ------------- 开始 -------------
+2022-04-04 14:18:16.647 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068839082233856[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:18:16.647 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068839082233856[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:18:16.647 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068839082233856[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:16.647 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068839082233856[0;39m 请求参数: []
+2022-04-04 14:18:16.649 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068839082233856[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:18:16.650 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068839082233856[0;39m ==> Parameters: 
+2022-04-04 14:18:16.651 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068839082233856[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:18:16.652 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068839082233856[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:18:16.652 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068839082233856[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:18:16.652 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068839082233856[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:18:16.652 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068839082233856[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:18:16.652 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068839082233856[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:18:16.653 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068839082233856[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:18:16.653 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068839082233856[0;39m <==      Total: 6
+2022-04-04 14:18:16.653 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068839082233856[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:18:16.653 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068839082233856[0;39m ------------- 结束 耗时：6 ms -------------
+2022-04-04 14:18:16.654 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068839082233856[0;39m ------------- LogFilter 结束 耗时：8 ms -------------
+2022-04-04 14:18:17.048 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068026880430080[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:17.048 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068026880430080[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:18:17.048 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068026880430080[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:17.048 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068840764149760[0;39m ------------- 开始 -------------
+2022-04-04 14:18:17.048 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068840764149760[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:18:17.049 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068840764149760[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:18:17.049 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068840764149760[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:17.049 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068840764149760[0;39m 请求参数: []
+2022-04-04 14:18:17.049 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068840764149760[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:18:17.049 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166067703336013824[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:17.049 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166067703336013824[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:18:17.049 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068840764149760[0;39m ==> Parameters: 
+2022-04-04 14:18:17.050 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166067703336013824[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:17.050 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068840772538368[0;39m ------------- 开始 -------------
+2022-04-04 14:18:17.050 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068840772538368[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:18:17.050 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068840772538368[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:18:17.051 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068840772538368[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:17.051 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068840772538368[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:18:17.051 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068840764149760[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:18:17.051 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068840764149760[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:18:17.051 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068840764149760[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:18:17.052 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068840764149760[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:18:17.052 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068840764149760[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:18:17.053 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068840764149760[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:18:17.053 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166068840764149760[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:18:17.053 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166068840764149760[0;39m <==      Total: 6
+2022-04-04 14:18:17.053 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068840764149760[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:18:17.054 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068840764149760[0;39m ------------- 结束 耗时：6 ms -------------
+2022-04-04 14:18:17.055 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068840764149760[0;39m ------------- LogFilter 结束 耗时：7 ms -------------
+2022-04-04 14:18:17.055 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068840772538368[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:18:17.055 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068840772538368[0;39m ==> Parameters: 
+2022-04-04 14:18:17.058 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166068840772538368[0;39m <==    Columns: count(0)
+2022-04-04 14:18:17.058 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166068840772538368[0;39m <==        Row: 4
+2022-04-04 14:18:17.058 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068840772538368[0;39m <==      Total: 1
+2022-04-04 14:18:17.059 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068840772538368[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:18:17.059 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068840772538368[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:18:17.062 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068840772538368[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:18:17.062 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068840772538368[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:18:17.062 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068840772538368[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:18:17.063 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068840772538368[0;39m <==      Total: 2
+2022-04-04 14:18:17.063 INFO  com.byf.mywiki.service.EbookService               :95   [32m166068840772538368[0;39m 总行数：4
+2022-04-04 14:18:17.063 INFO  com.byf.mywiki.service.EbookService               :96   [32m166068840772538368[0;39m 总页数：2
+2022-04-04 14:18:17.063 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068840772538368[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:18:17.063 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068840772538368[0;39m ------------- 结束 耗时：13 ms -------------
+2022-04-04 14:18:17.065 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068840772538368[0;39m ------------- LogFilter 结束 耗时：15 ms -------------
+2022-04-04 14:18:17.068 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068811412410368[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:17.069 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068811412410368[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:18:17.069 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068811412410368[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:17.069 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068840852230144[0;39m ------------- 开始 -------------
+2022-04-04 14:18:17.069 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068840852230144[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:18:17.069 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068840852230144[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:18:17.070 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068840852230144[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:17.070 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068840852230144[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:18:17.071 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068840852230144[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:18:17.071 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068840852230144[0;39m ==> Parameters: 
+2022-04-04 14:18:17.073 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166068840852230144[0;39m <==    Columns: count(0)
+2022-04-04 14:18:17.073 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166068840852230144[0;39m <==        Row: 4
+2022-04-04 14:18:17.073 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166068840852230144[0;39m <==      Total: 1
+2022-04-04 14:18:17.074 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068840852230144[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:18:17.074 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068840852230144[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:18:17.076 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068840852230144[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:18:17.076 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068840852230144[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:18:17.076 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166068840852230144[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:18:17.076 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166068840852230144[0;39m <==      Total: 2
+2022-04-04 14:18:17.077 INFO  com.byf.mywiki.service.EbookService               :95   [32m166068840852230144[0;39m 总行数：4
+2022-04-04 14:18:17.077 INFO  com.byf.mywiki.service.EbookService               :96   [32m166068840852230144[0;39m 总页数：2
+2022-04-04 14:18:17.077 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068840852230144[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:18:17.077 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068840852230144[0;39m ------------- 结束 耗时：8 ms -------------
+2022-04-04 14:18:17.078 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068840852230144[0;39m ------------- LogFilter 结束 耗时：9 ms -------------
+2022-04-04 14:18:17.436 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068822640562176[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:18:17.436 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068822640562176[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:18:17.436 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068822640562176[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:17.436 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166068842391539712[0;39m ------------- 开始 -------------
+2022-04-04 14:18:17.437 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166068842391539712[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:18:17.437 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166068842391539712[0;39m 类名方法: com.byf.mywiki.controller.UserController.list
+2022-04-04 14:18:17.437 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166068842391539712[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:18:17.437 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166068842391539712[0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-04 14:18:17.438 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166068842391539712[0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-04-04 14:18:17.438 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166068842391539712[0;39m ==> Parameters: 
+2022-04-04 14:18:17.440 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166068842391539712[0;39m <==    Columns: count(0)
+2022-04-04 14:18:17.440 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166068842391539712[0;39m <==        Row: 2
+2022-04-04 14:18:17.440 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166068842391539712[0;39m <==      Total: 1
+2022-04-04 14:18:17.441 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068842391539712[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-04-04 14:18:17.442 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068842391539712[0;39m ==> Parameters: 10(Integer)
+2022-04-04 14:18:17.444 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068842391539712[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:18:17.444 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068842391539712[0;39m <==        Row: 1, byf, byf, 7354a1d413535a6c0dc5c209e198d799
+2022-04-04 14:18:17.444 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166068842391539712[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:18:17.445 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166068842391539712[0;39m <==      Total: 2
+2022-04-04 14:18:17.445 INFO  com.byf.mywiki.service.UserService                :97   [32m166068842391539712[0;39m 总行数：2
+2022-04-04 14:18:17.445 INFO  com.byf.mywiki.service.UserService                :98   [32m166068842391539712[0;39m 总页数：1
+2022-04-04 14:18:17.446 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166068842391539712[0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"byf","name":"byf"},{"id":166034471647318016,"loginName":"byf2","name":"byf"}],"total":2},"success":true}
+2022-04-04 14:18:17.446 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166068842391539712[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-04 14:18:17.446 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166068842391539712[0;39m ------------- LogFilter 结束 耗时：10 ms -------------
+2022-04-04 14:50:38.063 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068830924312576[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:38.064 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068830924312576[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:38.064 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068830924312576[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:38.065 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166076981979516928[0;39m ------------- 开始 -------------
+2022-04-04 14:50:38.065 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166076981979516928[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:38.065 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166076981979516928[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:50:38.065 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166076981979516928[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:38.066 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166076981979516928[0;39m 请求参数: []
+2022-04-04 14:50:38.070 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166076981979516928[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:50:38.071 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166076981979516928[0;39m ==> Parameters: 
+2022-04-04 14:50:38.073 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076981979516928[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:50:38.073 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076981979516928[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:50:38.073 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076981979516928[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:50:38.073 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076981979516928[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:50:38.074 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076981979516928[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:50:38.074 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076981979516928[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:50:38.074 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076981979516928[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:50:38.074 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166076981979516928[0;39m <==      Total: 6
+2022-04-04 14:50:38.075 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166076981979516928[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:50:38.075 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166076981979516928[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-04 14:50:38.082 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166076981979516928[0;39m ------------- LogFilter 结束 耗时：18 ms -------------
+2022-04-04 14:50:40.522 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068831024975872[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:40.522 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068831024975872[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:40.522 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068831024975872[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:40.523 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166076992289116160[0;39m ------------- 开始 -------------
+2022-04-04 14:50:40.523 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166076992289116160[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:40.523 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166076992289116160[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:50:40.524 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166076992289116160[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:40.525 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166076992289116160[0;39m 请求参数: []
+2022-04-04 14:50:40.529 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166076992289116160[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:50:40.531 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166076992289116160[0;39m ==> Parameters: 
+2022-04-04 14:50:40.533 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076992289116160[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:50:40.533 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076992289116160[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:50:40.534 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076992289116160[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:50:40.534 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076992289116160[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:50:40.535 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076992289116160[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:50:40.535 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076992289116160[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:50:40.535 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166076992289116160[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:50:40.535 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166076992289116160[0;39m <==      Total: 6
+2022-04-04 14:50:40.536 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166076992289116160[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:50:40.537 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166076992289116160[0;39m ------------- 结束 耗时：14 ms -------------
+2022-04-04 14:50:40.538 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166076992289116160[0;39m ------------- LogFilter 结束 耗时：15 ms -------------
+2022-04-04 14:50:44.379 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068832602034176[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:44.379 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068832602034176[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:50:44.379 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068832602034176[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:44.380 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077008466546688[0;39m ------------- 开始 -------------
+2022-04-04 14:50:44.380 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077008466546688[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:50:44.380 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077008466546688[0;39m 类名方法: com.byf.mywiki.controller.UserController.list
+2022-04-04 14:50:44.380 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077008466546688[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:44.381 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077008466546688[0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-04 14:50:44.383 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166077008466546688[0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-04-04 14:50:44.383 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166077008466546688[0;39m ==> Parameters: 
+2022-04-04 14:50:44.385 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166077008466546688[0;39m <==    Columns: count(0)
+2022-04-04 14:50:44.386 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166077008466546688[0;39m <==        Row: 2
+2022-04-04 14:50:44.386 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166077008466546688[0;39m <==      Total: 1
+2022-04-04 14:50:44.386 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166077008466546688[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-04-04 14:50:44.387 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166077008466546688[0;39m ==> Parameters: 10(Integer)
+2022-04-04 14:50:44.389 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166077008466546688[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:50:44.389 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166077008466546688[0;39m <==        Row: 1, byf, byf, 7354a1d413535a6c0dc5c209e198d799
+2022-04-04 14:50:44.390 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166077008466546688[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:50:44.390 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166077008466546688[0;39m <==      Total: 2
+2022-04-04 14:50:44.390 INFO  com.byf.mywiki.service.UserService                :97   [32m166077008466546688[0;39m 总行数：2
+2022-04-04 14:50:44.390 INFO  com.byf.mywiki.service.UserService                :98   [32m166077008466546688[0;39m 总页数：1
+2022-04-04 14:50:44.391 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077008466546688[0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"byf","name":"byf"},{"id":166034471647318016,"loginName":"byf2","name":"byf"}],"total":2},"success":true}
+2022-04-04 14:50:44.391 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077008466546688[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-04 14:50:44.393 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077008466546688[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
+2022-04-04 14:50:45.446 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068839082233856[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:45.446 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068839082233856[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:45.446 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068839082233856[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:45.446 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077012937674752[0;39m ------------- 开始 -------------
+2022-04-04 14:50:45.446 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077012937674752[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:45.447 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077012937674752[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:50:45.447 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077012937674752[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:45.447 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077012937674752[0;39m 请求参数: []
+2022-04-04 14:50:45.448 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068840764149760[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:45.449 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068840764149760[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:45.449 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068840764149760[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:45.449 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077012950257664[0;39m ------------- 开始 -------------
+2022-04-04 14:50:45.450 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077012950257664[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:45.450 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077012950257664[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:50:45.450 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077012950257664[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:45.450 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077012950257664[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:50:45.451 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077012937674752[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:50:45.452 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077012937674752[0;39m ==> Parameters: 
+2022-04-04 14:50:45.454 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077012950257664[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:50:45.454 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077012937674752[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:50:45.454 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077012950257664[0;39m ==> Parameters: 
+2022-04-04 14:50:45.454 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077012937674752[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:50:45.454 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077012937674752[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:50:45.455 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077012937674752[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:50:45.455 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077012937674752[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:50:45.455 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077012937674752[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:50:45.455 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077012937674752[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:50:45.455 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077012937674752[0;39m <==      Total: 6
+2022-04-04 14:50:45.456 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077012937674752[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:50:45.456 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077012950257664[0;39m <==    Columns: count(0)
+2022-04-04 14:50:45.456 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077012937674752[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-04 14:50:45.456 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077012950257664[0;39m <==        Row: 4
+2022-04-04 14:50:45.456 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077012950257664[0;39m <==      Total: 1
+2022-04-04 14:50:45.456 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077012950257664[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:50:45.457 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077012950257664[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:50:45.459 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077012937674752[0;39m ------------- LogFilter 结束 耗时：13 ms -------------
+2022-04-04 14:50:45.459 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077012950257664[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:50:45.459 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077012950257664[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:50:45.459 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077012950257664[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:50:45.459 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077012950257664[0;39m <==      Total: 2
+2022-04-04 14:50:45.460 INFO  com.byf.mywiki.service.EbookService               :95   [32m166077012950257664[0;39m 总行数：4
+2022-04-04 14:50:45.460 INFO  com.byf.mywiki.service.EbookService               :96   [32m166077012950257664[0;39m 总页数：2
+2022-04-04 14:50:45.460 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077012950257664[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:50:45.460 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077012950257664[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-04 14:50:45.461 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077012950257664[0;39m ------------- LogFilter 结束 耗时：12 ms -------------
+2022-04-04 14:50:45.469 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068840772538368[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:45.469 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068840772538368[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:45.469 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068840772538368[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:45.470 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077013038338048[0;39m ------------- 开始 -------------
+2022-04-04 14:50:45.470 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077013038338048[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:45.470 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077013038338048[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:50:45.470 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077013038338048[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:45.470 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077013038338048[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:50:45.471 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077013038338048[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:50:45.471 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077013038338048[0;39m ==> Parameters: 
+2022-04-04 14:50:45.473 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077013038338048[0;39m <==    Columns: count(0)
+2022-04-04 14:50:45.473 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077013038338048[0;39m <==        Row: 4
+2022-04-04 14:50:45.473 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077013038338048[0;39m <==      Total: 1
+2022-04-04 14:50:45.474 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077013038338048[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:50:45.474 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077013038338048[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:50:45.476 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077013038338048[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:50:45.476 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077013038338048[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:50:45.476 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077013038338048[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:50:45.476 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077013038338048[0;39m <==      Total: 2
+2022-04-04 14:50:45.477 INFO  com.byf.mywiki.service.EbookService               :95   [32m166077013038338048[0;39m 总行数：4
+2022-04-04 14:50:45.477 INFO  com.byf.mywiki.service.EbookService               :96   [32m166077013038338048[0;39m 总页数：2
+2022-04-04 14:50:45.477 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077013038338048[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:50:45.477 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077013038338048[0;39m ------------- 结束 耗时：7 ms -------------
+2022-04-04 14:50:45.478 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077013038338048[0;39m ------------- LogFilter 结束 耗时：9 ms -------------
+2022-04-04 14:50:45.868 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068840852230144[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:45.868 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068840852230144[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:45.868 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068840852230144[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:45.868 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077014707671040[0;39m ------------- 开始 -------------
+2022-04-04 14:50:45.869 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077014707671040[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:45.869 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077014707671040[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:50:45.869 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077014707671040[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:45.869 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077014707671040[0;39m 请求参数: []
+2022-04-04 14:50:45.870 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077014707671040[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:50:45.870 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077014707671040[0;39m ==> Parameters: 
+2022-04-04 14:50:45.873 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077014707671040[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:50:45.873 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077014707671040[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:50:45.873 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077014707671040[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:50:45.873 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077014707671040[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:50:45.874 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077014707671040[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:50:45.874 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077014707671040[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:50:45.874 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077014707671040[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:50:45.874 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077014707671040[0;39m <==      Total: 6
+2022-04-04 14:50:45.875 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077014707671040[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:50:45.875 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077014707671040[0;39m ------------- 结束 耗时：7 ms -------------
+2022-04-04 14:50:45.876 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077014707671040[0;39m ------------- LogFilter 结束 耗时：8 ms -------------
+2022-04-04 14:50:46.251 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068842391539712[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:46.251 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068842391539712[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:46.251 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068842391539712[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:46.252 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077016318283776[0;39m ------------- 开始 -------------
+2022-04-04 14:50:46.252 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077016318283776[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:46.252 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077016318283776[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:50:46.252 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077016318283776[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:46.253 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077016318283776[0;39m 请求参数: []
+2022-04-04 14:50:46.253 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077016318283776[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:50:46.253 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077016318283776[0;39m ==> Parameters: 
+2022-04-04 14:50:46.255 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077016318283776[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:50:46.256 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077016318283776[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:50:46.256 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077016318283776[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:50:46.256 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077016318283776[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:50:46.256 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077016318283776[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:50:46.256 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077016318283776[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:50:46.256 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077016318283776[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:50:46.257 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077016318283776[0;39m <==      Total: 6
+2022-04-04 14:50:46.257 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068828244152320[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:46.257 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068828244152320[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:46.257 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077016318283776[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:50:46.257 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068828244152320[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:46.257 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077016318283776[0;39m ------------- 结束 耗时：5 ms -------------
+2022-04-04 14:50:46.258 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077016343449600[0;39m ------------- 开始 -------------
+2022-04-04 14:50:46.258 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077016343449600[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:46.258 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077016343449600[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:50:46.258 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077016343449600[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:46.258 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077016343449600[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:50:46.259 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077016318283776[0;39m ------------- LogFilter 结束 耗时：8 ms -------------
+2022-04-04 14:50:46.259 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077016343449600[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:50:46.259 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077016343449600[0;39m ==> Parameters: 
+2022-04-04 14:50:46.261 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077016343449600[0;39m <==    Columns: count(0)
+2022-04-04 14:50:46.262 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077016343449600[0;39m <==        Row: 4
+2022-04-04 14:50:46.262 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077016343449600[0;39m <==      Total: 1
+2022-04-04 14:50:46.263 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077016343449600[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:50:46.263 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077016343449600[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:50:46.266 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077016343449600[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:50:46.266 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077016343449600[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:50:46.267 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077016343449600[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:50:46.267 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077016343449600[0;39m <==      Total: 2
+2022-04-04 14:50:46.267 INFO  com.byf.mywiki.service.EbookService               :95   [32m166077016343449600[0;39m 总行数：4
+2022-04-04 14:50:46.267 INFO  com.byf.mywiki.service.EbookService               :96   [32m166077016343449600[0;39m 总页数：2
+2022-04-04 14:50:46.268 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077016343449600[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:50:46.268 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077016343449600[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-04 14:50:46.270 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077016343449600[0;39m ------------- LogFilter 结束 耗时：13 ms -------------
+2022-04-04 14:50:46.274 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166068830869786624[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:46.274 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166068830869786624[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:46.274 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166068830869786624[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:46.275 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077016410558464[0;39m ------------- 开始 -------------
+2022-04-04 14:50:46.275 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077016410558464[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:46.275 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077016410558464[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:50:46.275 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077016410558464[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:46.275 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077016410558464[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:50:46.276 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077016410558464[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:50:46.276 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077016410558464[0;39m ==> Parameters: 
+2022-04-04 14:50:46.278 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077016410558464[0;39m <==    Columns: count(0)
+2022-04-04 14:50:46.278 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077016410558464[0;39m <==        Row: 4
+2022-04-04 14:50:46.278 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077016410558464[0;39m <==      Total: 1
+2022-04-04 14:50:46.279 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077016410558464[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:50:46.280 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077016410558464[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:50:46.282 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077016410558464[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:50:46.282 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077016410558464[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:50:46.283 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077016410558464[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:50:46.284 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077016410558464[0;39m <==      Total: 2
+2022-04-04 14:50:46.284 INFO  com.byf.mywiki.service.EbookService               :95   [32m166077016410558464[0;39m 总行数：4
+2022-04-04 14:50:46.285 INFO  com.byf.mywiki.service.EbookService               :96   [32m166077016410558464[0;39m 总页数：2
+2022-04-04 14:50:46.287 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077016410558464[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:50:46.287 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077016410558464[0;39m ------------- 结束 耗时：13 ms -------------
+2022-04-04 14:50:46.290 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077016410558464[0;39m ------------- LogFilter 结束 耗时：16 ms -------------
+2022-04-04 14:50:46.512 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166076981979516928[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:46.513 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166076981979516928[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:46.513 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166076981979516928[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:46.513 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077017412997120[0;39m ------------- 开始 -------------
+2022-04-04 14:50:46.513 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077017412997120[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:46.513 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077017412997120[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:50:46.514 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077017412997120[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:46.515 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077017412997120[0;39m 请求参数: []
+2022-04-04 14:50:46.516 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077017412997120[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:50:46.516 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077017412997120[0;39m ==> Parameters: 
+2022-04-04 14:50:46.519 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077017412997120[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:50:46.519 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077017412997120[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:50:46.519 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077017412997120[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:50:46.519 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077017412997120[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:50:46.520 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077017412997120[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:50:46.520 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077017412997120[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:50:46.520 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077017412997120[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:50:46.520 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077017412997120[0;39m <==      Total: 6
+2022-04-04 14:50:46.521 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077017412997120[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:50:46.521 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077017412997120[0;39m ------------- 结束 耗时：8 ms -------------
+2022-04-04 14:50:46.523 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077017412997120[0;39m ------------- LogFilter 结束 耗时：10 ms -------------
+2022-04-04 14:50:48.981 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166076992289116160[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:48.981 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166076992289116160[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:48.981 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166076992289116160[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:48.982 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077027768733696[0;39m ------------- 开始 -------------
+2022-04-04 14:50:48.982 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077027768733696[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:48.982 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077027768733696[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:50:48.982 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077027768733696[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:48.983 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077027768733696[0;39m 请求参数: []
+2022-04-04 14:50:48.985 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077027768733696[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:50:48.985 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077027768733696[0;39m ==> Parameters: 
+2022-04-04 14:50:48.987 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077027768733696[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:50:48.987 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077027768733696[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:50:48.988 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077027768733696[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:50:48.988 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077027768733696[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:50:48.988 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077027768733696[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:50:48.988 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077027768733696[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:50:48.988 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077027768733696[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:50:48.988 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077027768733696[0;39m <==      Total: 6
+2022-04-04 14:50:48.989 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077027768733696[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:50:48.989 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077027768733696[0;39m ------------- 结束 耗时：7 ms -------------
+2022-04-04 14:50:48.990 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077027768733696[0;39m ------------- LogFilter 结束 耗时：9 ms -------------
+2022-04-04 14:50:49.356 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166077008466546688[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:49.356 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166077008466546688[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:49.356 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166077008466546688[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:49.357 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077029341597696[0;39m ------------- 开始 -------------
+2022-04-04 14:50:49.357 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077029341597696[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:49.357 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077029341597696[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:50:49.357 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077029341597696[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:49.357 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077029341597696[0;39m 请求参数: []
+2022-04-04 14:50:49.358 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077029341597696[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:50:49.358 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077029341597696[0;39m ==> Parameters: 
+2022-04-04 14:50:49.358 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166077012937674752[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:49.358 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166077012937674752[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:49.358 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166077012937674752[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:49.359 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077029349986304[0;39m ------------- 开始 -------------
+2022-04-04 14:50:49.359 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077029349986304[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:49.359 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077029349986304[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:50:49.359 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077029349986304[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:49.360 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077029349986304[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:50:49.361 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077029349986304[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:50:49.361 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077029341597696[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:50:49.362 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077029341597696[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:50:49.362 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077029349986304[0;39m ==> Parameters: 
+2022-04-04 14:50:49.362 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077029341597696[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:50:49.362 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077029341597696[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:50:49.362 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077029341597696[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:50:49.363 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077029341597696[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:50:49.363 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077029341597696[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:50:49.363 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077029341597696[0;39m <==      Total: 6
+2022-04-04 14:50:49.363 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077029349986304[0;39m <==    Columns: count(0)
+2022-04-04 14:50:49.363 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077029341597696[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:50:49.363 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077029349986304[0;39m <==        Row: 4
+2022-04-04 14:50:49.364 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077029341597696[0;39m ------------- 结束 耗时：7 ms -------------
+2022-04-04 14:50:49.364 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077029349986304[0;39m <==      Total: 1
+2022-04-04 14:50:49.364 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077029349986304[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:50:49.365 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077029349986304[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:50:49.365 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077029341597696[0;39m ------------- LogFilter 结束 耗时：9 ms -------------
+2022-04-04 14:50:49.367 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077029349986304[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:50:49.367 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077029349986304[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:50:49.367 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077029349986304[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:50:49.368 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077029349986304[0;39m <==      Total: 2
+2022-04-04 14:50:49.368 INFO  com.byf.mywiki.service.EbookService               :95   [32m166077029349986304[0;39m 总行数：4
+2022-04-04 14:50:49.368 INFO  com.byf.mywiki.service.EbookService               :96   [32m166077029349986304[0;39m 总页数：2
+2022-04-04 14:50:49.368 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077029349986304[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:50:49.368 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077029349986304[0;39m ------------- 结束 耗时：9 ms -------------
+2022-04-04 14:50:49.371 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077029349986304[0;39m ------------- LogFilter 结束 耗时：12 ms -------------
+2022-04-04 14:50:49.374 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166077012950257664[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:49.375 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166077012950257664[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:49.375 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166077012950257664[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:49.376 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077029421289472[0;39m ------------- 开始 -------------
+2022-04-04 14:50:49.376 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077029421289472[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:49.376 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077029421289472[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:50:49.376 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077029421289472[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:49.377 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077029421289472[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:50:49.377 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077029421289472[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:50:49.378 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077029421289472[0;39m ==> Parameters: 
+2022-04-04 14:50:49.379 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077029421289472[0;39m <==    Columns: count(0)
+2022-04-04 14:50:49.379 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077029421289472[0;39m <==        Row: 4
+2022-04-04 14:50:49.380 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077029421289472[0;39m <==      Total: 1
+2022-04-04 14:50:49.380 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077029421289472[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:50:49.381 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077029421289472[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:50:49.382 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077029421289472[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:50:49.383 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077029421289472[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:50:49.383 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077029421289472[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:50:49.383 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077029421289472[0;39m <==      Total: 2
+2022-04-04 14:50:49.384 INFO  com.byf.mywiki.service.EbookService               :95   [32m166077029421289472[0;39m 总行数：4
+2022-04-04 14:50:49.384 INFO  com.byf.mywiki.service.EbookService               :96   [32m166077029421289472[0;39m 总页数：2
+2022-04-04 14:50:49.385 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077029421289472[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:50:49.385 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077029421289472[0;39m ------------- 结束 耗时：9 ms -------------
+2022-04-04 14:50:49.387 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077029421289472[0;39m ------------- LogFilter 结束 耗时：12 ms -------------
+2022-04-04 14:50:49.663 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166077013038338048[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:49.663 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166077013038338048[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:50:49.663 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166077013038338048[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:49.664 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077030629249024[0;39m ------------- 开始 -------------
+2022-04-04 14:50:49.665 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077030629249024[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:50:49.665 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077030629249024[0;39m 类名方法: com.byf.mywiki.controller.UserController.list
+2022-04-04 14:50:49.665 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077030629249024[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:49.665 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077030629249024[0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-04 14:50:49.666 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166077030629249024[0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-04-04 14:50:49.666 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166077030629249024[0;39m ==> Parameters: 
+2022-04-04 14:50:49.668 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166077030629249024[0;39m <==    Columns: count(0)
+2022-04-04 14:50:49.668 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166077030629249024[0;39m <==        Row: 2
+2022-04-04 14:50:49.669 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166077030629249024[0;39m <==      Total: 1
+2022-04-04 14:50:49.669 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166077030629249024[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-04-04 14:50:49.669 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166077030629249024[0;39m ==> Parameters: 10(Integer)
+2022-04-04 14:50:49.671 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166077030629249024[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:50:49.672 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166077030629249024[0;39m <==        Row: 1, byf, byf, 7354a1d413535a6c0dc5c209e198d799
+2022-04-04 14:50:49.672 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166077030629249024[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:50:49.672 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166077030629249024[0;39m <==      Total: 2
+2022-04-04 14:50:49.672 INFO  com.byf.mywiki.service.UserService                :97   [32m166077030629249024[0;39m 总行数：2
+2022-04-04 14:50:49.673 INFO  com.byf.mywiki.service.UserService                :98   [32m166077030629249024[0;39m 总页数：1
+2022-04-04 14:50:49.673 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077030629249024[0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"byf","name":"byf"},{"id":166034471647318016,"loginName":"byf2","name":"byf"}],"total":2},"success":true}
+2022-04-04 14:50:49.673 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077030629249024[0;39m ------------- 结束 耗时：9 ms -------------
+2022-04-04 14:50:49.674 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077030629249024[0;39m ------------- LogFilter 结束 耗时：11 ms -------------
+2022-04-04 14:50:50.116 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166077014707671040[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:50.116 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166077014707671040[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:50.116 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166077014707671040[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:50.116 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077032525074432[0;39m ------------- 开始 -------------
+2022-04-04 14:50:50.117 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077032525074432[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:50.117 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077032525074432[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:50:50.117 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077032525074432[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:50.117 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077032525074432[0;39m 请求参数: []
+2022-04-04 14:50:50.117 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077032525074432[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:50:50.118 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077032525074432[0;39m ==> Parameters: 
+2022-04-04 14:50:50.120 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077032525074432[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:50:50.120 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077032525074432[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:50:50.120 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077032525074432[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:50:50.120 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077032525074432[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:50:50.121 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077032525074432[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:50:50.121 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077032525074432[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:50:50.121 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077032525074432[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:50:50.121 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077032525074432[0;39m <==      Total: 6
+2022-04-04 14:50:50.121 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077032525074432[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:50:50.122 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077032525074432[0;39m ------------- 结束 耗时：6 ms -------------
+2022-04-04 14:50:50.123 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077032525074432[0;39m ------------- LogFilter 结束 耗时：7 ms -------------
+2022-04-04 14:50:50.547 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166077016318283776[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:50.547 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166077016318283776[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:50:50.547 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166077016318283776[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:50.548 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077034337013760[0;39m ------------- 开始 -------------
+2022-04-04 14:50:50.548 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077034337013760[0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:50:50.548 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077034337013760[0;39m 类名方法: com.byf.mywiki.controller.UserController.list
+2022-04-04 14:50:50.548 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077034337013760[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:50.549 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077034337013760[0;39m 请求参数: [{"page":1,"size":10}]
+2022-04-04 14:50:50.549 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166077034337013760[0;39m ==>  Preparing: SELECT count(0) FROM user
+2022-04-04 14:50:50.549 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166077034337013760[0;39m ==> Parameters: 
+2022-04-04 14:50:50.551 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166077034337013760[0;39m <==    Columns: count(0)
+2022-04-04 14:50:50.552 TRACE c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:143  [32m166077034337013760[0;39m <==        Row: 2
+2022-04-04 14:50:50.552 DEBUG c.b.mywiki.mapper.UserMapper.selectByExample_COUNT:137  [32m166077034337013760[0;39m <==      Total: 1
+2022-04-04 14:50:50.552 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166077034337013760[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user LIMIT ?
+2022-04-04 14:50:50.552 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166077034337013760[0;39m ==> Parameters: 10(Integer)
+2022-04-04 14:50:50.554 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166077034337013760[0;39m <==    Columns: id, login_name, name, password
+2022-04-04 14:50:50.554 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166077034337013760[0;39m <==        Row: 1, byf, byf, 7354a1d413535a6c0dc5c209e198d799
+2022-04-04 14:50:50.555 TRACE com.byf.mywiki.mapper.UserMapper.selectByExample  :143  [32m166077034337013760[0;39m <==        Row: 166034471647318016, byf2, byf, 4db71c791e6a5f87027698565abc76c8
+2022-04-04 14:50:50.555 DEBUG com.byf.mywiki.mapper.UserMapper.selectByExample  :137  [32m166077034337013760[0;39m <==      Total: 2
+2022-04-04 14:50:50.555 INFO  com.byf.mywiki.service.UserService                :97   [32m166077034337013760[0;39m 总行数：2
+2022-04-04 14:50:50.555 INFO  com.byf.mywiki.service.UserService                :98   [32m166077034337013760[0;39m 总页数：1
+2022-04-04 14:50:50.556 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077034337013760[0;39m 返回结果: {"content":{"list":[{"id":1,"loginName":"byf","name":"byf"},{"id":166034471647318016,"loginName":"byf2","name":"byf"}],"total":2},"success":true}
+2022-04-04 14:50:50.556 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077034337013760[0;39m ------------- 结束 耗时：8 ms -------------
+2022-04-04 14:50:50.558 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077034337013760[0;39m ------------- LogFilter 结束 耗时：11 ms -------------
+2022-04-04 14:50:53.278 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166077016343449600[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:53.279 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166077016343449600[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:53.279 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166077016343449600[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:53.279 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077045791657984[0;39m ------------- 开始 -------------
+2022-04-04 14:50:53.279 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077045791657984[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:50:53.279 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077045791657984[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:50:53.280 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077045791657984[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:53.280 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077045791657984[0;39m 请求参数: []
+2022-04-04 14:50:53.282 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166077016410558464[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:53.282 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166077016410558464[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:53.282 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166077016410558464[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:53.283 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077045808435200[0;39m ------------- 开始 -------------
+2022-04-04 14:50:53.283 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077045808435200[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:53.283 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077045808435200[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:50:53.284 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077045808435200[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:53.284 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077045808435200[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:50:53.284 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077045791657984[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:50:53.285 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077045791657984[0;39m ==> Parameters: 
+2022-04-04 14:50:53.287 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077045808435200[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:50:53.287 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077045791657984[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:50:53.287 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077045791657984[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:50:53.287 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077045808435200[0;39m ==> Parameters: 
+2022-04-04 14:50:53.287 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077045791657984[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:50:53.288 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077045791657984[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:50:53.288 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077045791657984[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:50:53.288 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077045791657984[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:50:53.288 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077045791657984[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:50:53.288 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077045791657984[0;39m <==      Total: 6
+2022-04-04 14:50:53.289 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077045791657984[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:50:53.289 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077045791657984[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-04 14:50:53.289 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077045808435200[0;39m <==    Columns: count(0)
+2022-04-04 14:50:53.289 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077045808435200[0;39m <==        Row: 4
+2022-04-04 14:50:53.289 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077045808435200[0;39m <==      Total: 1
+2022-04-04 14:50:53.290 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077045808435200[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:50:53.290 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077045808435200[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:50:53.291 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077045791657984[0;39m ------------- LogFilter 结束 耗时：12 ms -------------
+2022-04-04 14:50:53.291 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077045808435200[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:50:53.291 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077045808435200[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:50:53.292 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077045808435200[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:50:53.292 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077045808435200[0;39m <==      Total: 2
+2022-04-04 14:50:53.292 INFO  com.byf.mywiki.service.EbookService               :95   [32m166077045808435200[0;39m 总行数：4
+2022-04-04 14:50:53.293 INFO  com.byf.mywiki.service.EbookService               :96   [32m166077045808435200[0;39m 总页数：2
+2022-04-04 14:50:53.293 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077045808435200[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:50:53.293 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077045808435200[0;39m ------------- 结束 耗时：10 ms -------------
+2022-04-04 14:50:53.295 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077045808435200[0;39m ------------- LogFilter 结束 耗时：13 ms -------------
+2022-04-04 14:50:53.299 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166077017412997120[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:50:53.300 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166077017412997120[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:53.300 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166077017412997120[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:53.300 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077045879738368[0;39m ------------- 开始 -------------
+2022-04-04 14:50:53.301 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077045879738368[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:50:53.301 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077045879738368[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:50:53.301 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077045879738368[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:50:53.301 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077045879738368[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:50:53.302 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077045879738368[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:50:53.302 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077045879738368[0;39m ==> Parameters: 
+2022-04-04 14:50:53.304 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077045879738368[0;39m <==    Columns: count(0)
+2022-04-04 14:50:53.305 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077045879738368[0;39m <==        Row: 4
+2022-04-04 14:50:53.305 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077045879738368[0;39m <==      Total: 1
+2022-04-04 14:50:53.305 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077045879738368[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:50:53.305 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077045879738368[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:50:53.307 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077045879738368[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:50:53.308 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077045879738368[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:50:53.308 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077045879738368[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:50:53.308 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077045879738368[0;39m <==      Total: 2
+2022-04-04 14:50:53.308 INFO  com.byf.mywiki.service.EbookService               :95   [32m166077045879738368[0;39m 总行数：4
+2022-04-04 14:50:53.309 INFO  com.byf.mywiki.service.EbookService               :96   [32m166077045879738368[0;39m 总页数：2
+2022-04-04 14:50:53.309 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077045879738368[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:50:53.309 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077045879738368[0;39m ------------- 结束 耗时：9 ms -------------
+2022-04-04 14:50:53.311 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077045879738368[0;39m ------------- LogFilter 结束 耗时：11 ms -------------
+2022-04-04 14:51:06.445 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m166077027768733696[0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:51:06.445 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m166077027768733696[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:51:06.445 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m166077027768733696[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:06.445 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077101013864448[0;39m ------------- 开始 -------------
+2022-04-04 14:51:06.446 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077101013864448[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:51:06.446 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077101013864448[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:51:06.446 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077101013864448[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:06.446 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077101013864448[0;39m 请求参数: []
+2022-04-04 14:51:06.449 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077101013864448[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:51:06.449 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077101013864448[0;39m ==> Parameters: 
+2022-04-04 14:51:06.452 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077101013864448[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:51:06.452 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077101013864448[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:51:06.452 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077101013864448[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:51:06.452 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077101013864448[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:51:06.453 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077101013864448[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:51:06.453 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077101013864448[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:51:06.453 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077101013864448[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:51:06.453 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077101013864448[0;39m <==      Total: 6
+2022-04-04 14:51:06.454 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077101013864448[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:51:06.454 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077101013864448[0;39m ------------- 结束 耗时：9 ms -------------
+2022-04-04 14:51:06.456 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077101013864448[0;39m ------------- LogFilter 结束 耗时：11 ms -------------
+2022-04-04 14:51:28.785 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :218  [32m                  [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-04 14:51:28.900 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-4 - Shutdown initiated...
+2022-04-04 14:51:28.919 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-4 - Shutdown completed.
+2022-04-04 14:51:29.076 INFO  com.byf.mywiki.config.MywikiApplication           :55   [32m                  [0;39m Starting MywikiApplication using Java 1.8.0_181 on DESKTOP-5V0T0ET with PID 18300 (D:\mywiki2\target\classes started by Administrator in D:\mywiki2)
+2022-04-04 14:51:29.077 INFO  com.byf.mywiki.config.MywikiApplication           :660  [32m                  [0;39m No active profile set, falling back to default profiles: default
+2022-04-04 14:51:29.217 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :250  [32m                  [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-04 14:51:29.217 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :128  [32m                  [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-04 14:51:29.218 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :188  [32m                  [0;39m Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2022-04-04 14:51:29.369 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8880 (http)
+2022-04-04 14:51:29.369 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8880"]
+2022-04-04 14:51:29.369 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2022-04-04 14:51:29.369 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-04-04 14:51:29.395 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2022-04-04 14:51:29.395 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :289  [32m                  [0;39m Root WebApplicationContext: initialization completed in 316 ms
+2022-04-04 14:51:29.621 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :181  [32m                  [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-04 14:51:29.795 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m                  [0;39m LiveReload server is running on port 35729
+2022-04-04 14:51:29.802 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8880"]
+2022-04-04 14:51:29.809 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8880 (http) with context path ''
+2022-04-04 14:51:29.812 INFO  com.byf.mywiki.config.MywikiApplication           :61   [32m                  [0;39m Started MywikiApplication in 0.765 seconds (JVM running for 11722.985)
+2022-04-04 14:51:29.813 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2022-04-04 14:51:29.813 INFO  com.byf.mywiki.config.MywikiApplication           :24   [32m                  [0;39m 启动成功！！
+2022-04-04 14:51:29.814 INFO  com.byf.mywiki.config.MywikiApplication           :25   [32m                  [0;39m 地址: 	http://127.0.0.1:8880
+2022-04-04 14:51:34.413 INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-04 14:51:34.415 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2022-04-04 14:51:34.415 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m                  [0;39m Completed initialization in 0 ms
+2022-04-04 14:51:34.415 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:51:34.416 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:51:34.416 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:34.417 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077218336935936[0;39m ------------- 开始 -------------
+2022-04-04 14:51:34.417 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077218336935936[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:51:34.418 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077218336935936[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:51:34.418 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077218336935936[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:34.419 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077218336935936[0;39m 请求参数: []
+2022-04-04 14:51:34.423 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m166077218336935936[0;39m HikariPool-5 - Starting...
+2022-04-04 14:51:34.435 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m166077218336935936[0;39m HikariPool-5 - Start completed.
+2022-04-04 14:51:34.435 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077218336935936[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:51:34.436 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077218336935936[0;39m ==> Parameters: 
+2022-04-04 14:51:34.437 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077218336935936[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:51:34.437 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077218336935936[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:51:34.438 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077218336935936[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:51:34.438 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077218336935936[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:51:34.438 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077218336935936[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:51:34.438 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077218336935936[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:51:34.438 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077218336935936[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:51:34.438 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077218336935936[0;39m <==      Total: 6
+2022-04-04 14:51:34.444 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077218336935936[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:51:34.444 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077218336935936[0;39m ------------- 结束 耗时：27 ms -------------
+2022-04-04 14:51:34.449 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077218336935936[0;39m ------------- LogFilter 结束 耗时：33 ms -------------
+2022-04-04 14:51:35.884 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:51:35.884 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:51:35.884 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:35.884 INFO  com.byf.mywiki.interceptor.LoginInterceptor       :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-04-04 14:51:35.884 INFO  com.byf.mywiki.interceptor.LoginInterceptor       :43   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2022-04-04 14:51:35.885 INFO  com.byf.mywiki.interceptor.LoginInterceptor       :47   [32m                  [0;39m 登录校验开始，token：null
+2022-04-04 14:51:35.885 INFO  com.byf.mywiki.interceptor.LoginInterceptor       :49   [32m                  [0;39m token为空，请求被拦截
+2022-04-04 14:51:35.885 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：1 ms -------------
+2022-04-04 14:51:39.305 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:51:39.305 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:51:39.305 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:39.306 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077238842888192[0;39m ------------- 开始 -------------
+2022-04-04 14:51:39.306 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:51:39.306 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077238842888192[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:51:39.306 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:51:39.306 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:39.306 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077238842888192[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:51:39.306 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077238842888192[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:39.306 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077238842888192[0;39m 请求参数: []
+2022-04-04 14:51:39.308 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077238842888192[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:51:39.309 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077238842888192[0;39m ==> Parameters: 
+2022-04-04 14:51:39.310 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077238842888192[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:51:39.310 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077238842888192[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:51:39.311 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077238842888192[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:51:39.311 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077238842888192[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:51:39.311 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077238842888192[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:51:39.311 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077238842888192[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:51:39.311 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077238842888192[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:51:39.311 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077238842888192[0;39m <==      Total: 6
+2022-04-04 14:51:39.312 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077238842888192[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:51:39.312 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077238842888192[0;39m ------------- 结束 耗时：6 ms -------------
+2022-04-04 14:51:39.317 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077238842888192[0;39m ------------- LogFilter 结束 耗时：12 ms -------------
+2022-04-04 14:51:39.321 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077238905802752[0;39m ------------- 开始 -------------
+2022-04-04 14:51:39.321 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077238905802752[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:51:39.321 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077238905802752[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:51:39.321 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077238905802752[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:39.322 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077238905802752[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:51:39.326 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077238905802752[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:51:39.326 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077238905802752[0;39m ==> Parameters: 
+2022-04-04 14:51:39.327 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077238905802752[0;39m <==    Columns: count(0)
+2022-04-04 14:51:39.328 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077238905802752[0;39m <==        Row: 4
+2022-04-04 14:51:39.328 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077238905802752[0;39m <==      Total: 1
+2022-04-04 14:51:39.328 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077238905802752[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:51:39.329 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077238905802752[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:51:39.330 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077238905802752[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:51:39.330 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077238905802752[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:51:39.330 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077238905802752[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:51:39.330 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077238905802752[0;39m <==      Total: 2
+2022-04-04 14:51:39.331 INFO  com.byf.mywiki.service.EbookService               :95   [32m166077238905802752[0;39m 总行数：4
+2022-04-04 14:51:39.331 INFO  com.byf.mywiki.service.EbookService               :96   [32m166077238905802752[0;39m 总页数：2
+2022-04-04 14:51:39.336 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077238905802752[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:51:39.336 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077238905802752[0;39m ------------- 结束 耗时：15 ms -------------
+2022-04-04 14:51:39.339 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077238905802752[0;39m ------------- LogFilter 结束 耗时：33 ms -------------
+2022-04-04 14:51:39.341 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:51:39.342 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:51:39.342 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:39.343 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077238998077440[0;39m ------------- 开始 -------------
+2022-04-04 14:51:39.343 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077238998077440[0;39m 请求地址: http://127.0.0.1:8880/ebook/list GET
+2022-04-04 14:51:39.343 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077238998077440[0;39m 类名方法: com.byf.mywiki.controller.EbookController.list
+2022-04-04 14:51:39.343 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077238998077440[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:39.343 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077238998077440[0;39m 请求参数: [{"page":1,"size":2}]
+2022-04-04 14:51:39.344 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077238998077440[0;39m ==>  Preparing: SELECT count(0) FROM ebook
+2022-04-04 14:51:39.345 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077238998077440[0;39m ==> Parameters: 
+2022-04-04 14:51:39.346 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077238998077440[0;39m <==    Columns: count(0)
+2022-04-04 14:51:39.346 TRACE c.b.m.mapper.EbookMapper.selectByExample_COUNT    :143  [32m166077238998077440[0;39m <==        Row: 4
+2022-04-04 14:51:39.346 DEBUG c.b.m.mapper.EbookMapper.selectByExample_COUNT    :137  [32m166077238998077440[0;39m <==      Total: 1
+2022-04-04 14:51:39.346 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077238998077440[0;39m ==>  Preparing: select id, `name`, category1_id, category2_id, description, cover, doc_count, view_count, vote_count from ebook LIMIT ?
+2022-04-04 14:51:39.347 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077238998077440[0;39m ==> Parameters: 2(Integer)
+2022-04-04 14:51:39.348 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077238998077440[0;39m <==    Columns: id, name, category1_id, category2_id, description, cover, doc_count, view_count, vote_count
+2022-04-04 14:51:39.348 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077238998077440[0;39m <==        Row: 1, Springboot, 100, 102, java入门, /image/cover1.png, 3, 2, 3
+2022-04-04 14:51:39.348 TRACE com.byf.mywiki.mapper.EbookMapper.selectByExample :143  [32m166077238998077440[0;39m <==        Row: 3, SpringMVC, 100, 102, java入门, null, 4, 3, 2
+2022-04-04 14:51:39.348 DEBUG com.byf.mywiki.mapper.EbookMapper.selectByExample :137  [32m166077238998077440[0;39m <==      Total: 2
+2022-04-04 14:51:39.349 INFO  com.byf.mywiki.service.EbookService               :95   [32m166077238998077440[0;39m 总行数：4
+2022-04-04 14:51:39.349 INFO  com.byf.mywiki.service.EbookService               :96   [32m166077238998077440[0;39m 总页数：2
+2022-04-04 14:51:39.349 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077238998077440[0;39m 返回结果: {"content":{"list":[{"category1Id":100,"category2Id":102,"cover":"/image/cover1.png","description":"java入门","docCount":3,"id":1,"name":"Springboot","viewCount":2,"voteCount":3},{"category1Id":100,"category2Id":102,"description":"java入门","docCount":4,"id":3,"name":"SpringMVC","viewCount":3,"voteCount":2}],"total":4},"success":true}
+2022-04-04 14:51:39.349 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077238998077440[0;39m ------------- 结束 耗时：6 ms -------------
+2022-04-04 14:51:39.352 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077238998077440[0;39m ------------- LogFilter 结束 耗时：10 ms -------------
+2022-04-04 14:51:43.389 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:51:43.390 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:51:43.390 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:43.390 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166077255972425728[0;39m ------------- 开始 -------------
+2022-04-04 14:51:43.391 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166077255972425728[0;39m 请求地址: http://127.0.0.1:8880/category/all GET
+2022-04-04 14:51:43.391 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166077255972425728[0;39m 类名方法: com.byf.mywiki.controller.CategoryController.all
+2022-04-04 14:51:43.391 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166077255972425728[0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:43.391 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166077255972425728[0;39m 请求参数: []
+2022-04-04 14:51:43.392 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077255972425728[0;39m ==>  Preparing: select id, parent, `name`, sort from category order by sort asc
+2022-04-04 14:51:43.393 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077255972425728[0;39m ==> Parameters: 
+2022-04-04 14:51:43.394 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077255972425728[0;39m <==    Columns: id, parent, name, sort
+2022-04-04 14:51:43.395 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077255972425728[0;39m <==        Row: 165721387233841152, 100, vue3, 2
+2022-04-04 14:51:43.395 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077255972425728[0;39m <==        Row: 165723450420367360, 100, 1, 2
+2022-04-04 14:51:43.395 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077255972425728[0;39m <==        Row: 100, 0, 前端开发, 100
+2022-04-04 14:51:43.395 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077255972425728[0;39m <==        Row: 101, 100, vue, 101
+2022-04-04 14:51:43.396 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077255972425728[0;39m <==        Row: 102, 100, vue2, 102
+2022-04-04 14:51:43.397 TRACE c.byf.mywiki.mapper.CategoryMapper.selectByExample:143  [32m166077255972425728[0;39m <==        Row: 103, 102, 孙子, 103
+2022-04-04 14:51:43.397 DEBUG c.byf.mywiki.mapper.CategoryMapper.selectByExample:137  [32m166077255972425728[0;39m <==      Total: 6
+2022-04-04 14:51:43.398 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166077255972425728[0;39m 返回结果: {"content":[{"id":165721387233841152,"name":"vue3","parent":100,"sort":2},{"id":165723450420367360,"name":"1","parent":100,"sort":2},{"id":100,"name":"前端开发","parent":0,"sort":100},{"id":101,"name":"vue","parent":100,"sort":101},{"id":102,"name":"vue2","parent":100,"sort":102},{"id":103,"name":"孙子","parent":102,"sort":103}],"success":true}
+2022-04-04 14:51:43.399 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166077255972425728[0;39m ------------- 结束 耗时：9 ms -------------
+2022-04-04 14:51:43.403 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166077255972425728[0;39m ------------- LogFilter 结束 耗时：13 ms -------------
+2022-04-04 14:51:45.165 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 14:51:45.165 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://127.0.0.1:8880/user/list GET
+2022-04-04 14:51:45.165 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 14:51:45.165 INFO  com.byf.mywiki.interceptor.LoginInterceptor       :32   [32m                  [0;39m ------------- LoginInterceptor 开始 -------------
+2022-04-04 14:51:45.165 INFO  com.byf.mywiki.interceptor.LoginInterceptor       :43   [32m                  [0;39m 接口登录拦截：，path：http://127.0.0.1:8880/user/list
+2022-04-04 14:51:45.165 INFO  com.byf.mywiki.interceptor.LoginInterceptor       :47   [32m                  [0;39m 登录校验开始，token：null
+2022-04-04 14:51:45.165 INFO  com.byf.mywiki.interceptor.LoginInterceptor       :49   [32m                  [0;39m token为空，请求被拦截
+2022-04-04 14:51:45.165 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m                  [0;39m ------------- LogFilter 结束 耗时：0 ms -------------
