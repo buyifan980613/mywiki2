@@ -949,3 +949,15 @@ Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'id
 2022-04-04 11:51:25.660 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166031879240290304[0;39m 返回结果: "success"
 2022-04-04 11:51:25.661 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166031879240290304[0;39m ------------- 结束 耗时：928 ms -------------
 2022-04-04 11:51:25.662 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166031879240290304[0;39m ------------- LogFilter 结束 耗时：937 ms -------------
+2022-04-04 11:52:30.814 INFO  com.byf.mywiki.filter.LogFilter                   :25   [32m                  [0;39m ------------- LogFilter 开始 -------------
+2022-04-04 11:52:30.814 INFO  com.byf.mywiki.filter.LogFilter                   :26   [32m                  [0;39m 请求地址: http://localhost:8880/redis/get/123 GET
+2022-04-04 11:52:30.814 INFO  com.byf.mywiki.filter.LogFilter                   :27   [32m                  [0;39m 远程地址: 127.0.0.1
+2022-04-04 11:52:30.816 INFO  com.byf.mywiki.aspect.LogAspect                   :53   [32m166032156408287232[0;39m ------------- 开始 -------------
+2022-04-04 11:52:30.816 INFO  com.byf.mywiki.aspect.LogAspect                   :54   [32m166032156408287232[0;39m 请求地址: http://localhost:8880/redis/get/123 GET
+2022-04-04 11:52:30.816 INFO  com.byf.mywiki.aspect.LogAspect                   :55   [32m166032156408287232[0;39m 类名方法: com.byf.mywiki.controller.TestController.get
+2022-04-04 11:52:30.816 INFO  com.byf.mywiki.aspect.LogAspect                   :56   [32m166032156408287232[0;39m 远程地址: 127.0.0.1
+2022-04-04 11:52:30.816 INFO  com.byf.mywiki.aspect.LogAspect                   :78   [32m166032156408287232[0;39m 请求参数: [123]
+2022-04-04 11:52:30.826 INFO  com.byf.mywiki.controller.TestController          :69   [32m166032156408287232[0;39m key: 123, value: 123
+2022-04-04 11:52:30.826 INFO  com.byf.mywiki.aspect.LogAspect                   :90   [32m166032156408287232[0;39m 返回结果: "123"
+2022-04-04 11:52:30.826 INFO  com.byf.mywiki.aspect.LogAspect                   :91   [32m166032156408287232[0;39m ------------- 结束 耗时：11 ms -------------
+2022-04-04 11:52:30.828 INFO  com.byf.mywiki.filter.LogFilter                   :31   [32m166032156408287232[0;39m ------------- LogFilter 结束 耗时：14 ms -------------
