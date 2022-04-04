@@ -4,9 +4,10 @@
     <a-menu
         theme="dark"
         mode="horizontal"
-        :default-selected-keys="['2']"
+
         :style="{ lineHeight: '64px' }"
     >
+      <!--        :default-selected-keys="['2']"-->
       <a-menu-item key="/">
         <router-link to="/">首页</router-link>
       </a-menu-item>
@@ -24,6 +25,17 @@
       <a-menu-item key="/about">
         <router-link to="/about">关于我们</router-link>
       </a-menu-item>
+
+        <a-popconfirm
+            title="确认退出登录?"
+            ok-text="是"
+            cancel-text="否"
+            @confirm="logout()"
+        >
+          <a class="login-menu" v-show="user.id">
+            <span>退出登录</span>
+          </a>
+        </a-popconfirm>
       <a class="login-menu" v-show="user.id">
         <span>{{user.name}} 您好 </span>
       </a>
@@ -121,6 +133,11 @@ export default defineComponent({
 });
 </script>
 <style>
+.login-menu {
+  float: right;
+  color: white;
+  padding-left: 10px;
+}
 .logo {
   width: 120px;
   height: 31px;
@@ -130,9 +147,5 @@ export default defineComponent({
   color: white;
   font-size: 18px;
 }
-.login-menu {
-  float: right;
-  color: white;
-  padding-left: 10px;
-}
+
 </style>
