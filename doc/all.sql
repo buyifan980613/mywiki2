@@ -83,3 +83,15 @@ create table  user (
                           primary key (id),
                           unique key login_name_unique (login_name)
 )engine =innodb default charset  = utf8mb4;
+
+create table  ebook_snapshot (
+                       id bigint auto_increment not null,
+                       ebook_id bigint  not null default 0,
+                       date date  not null,
+                       view_count int  not null default 0,
+                       vote_count int  not null default 0,
+                       view_increase int  not null default 0,
+                       vote_increase int  not null default 0,
+
+                       primary key (id)
+)engine =innodb default charset  = utf8mb4;
