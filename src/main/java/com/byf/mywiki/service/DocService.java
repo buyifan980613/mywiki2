@@ -3,18 +3,24 @@ package com.byf.mywiki.service;
 import com.byf.mywiki.domain.Content;
 import com.byf.mywiki.domain.Doc;
 import com.byf.mywiki.domain.DocExample;
+import com.byf.mywiki.exception.BusinessException;
+import com.byf.mywiki.exception.BusinessExceptionCode;
 import com.byf.mywiki.mapper.ContentMapper;
 import com.byf.mywiki.mapper.DocMapper;
+import com.byf.mywiki.mapper.DocMapperCust;
 import com.byf.mywiki.req.DocQueryReq;
 import com.byf.mywiki.req.DocSaveReq;
 import com.byf.mywiki.resp.DocQueryResp;
 import com.byf.mywiki.resp.PageResp;
 import com.byf.mywiki.util.CopyUtil;
+import com.byf.mywiki.util.RedisUtil;
+import com.byf.mywiki.util.RequestContext;
 import com.byf.mywiki.util.SnowFlake;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.slf4j.MDC;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 
@@ -26,12 +32,17 @@ public class DocService {
 
     private static final Logger LOG = LoggerFactory.getLogger(DocService.class);
 
+    @Resource
+    public RedisUtil redisUtil;
+
 
     @Resource
     private ContentMapper contentMapper;
 
     @Resource
     private DocMapper docMapper;
+    @Resource
+    private DocMapperCust docMapperCust;
 
     @Resource
     private SnowFlake snowFlake;
@@ -137,4 +148,31 @@ public class DocService {
             return content.getContent();
         }
     }
+
+
+    /**
+     * 点赞
+     */
+    public void vote(Long id) {
+         docMapperCust.increaseVoteCount(id);
+//        // 远程IP+doc.id作为key，24小时内不能重复
+        String ip = RequestContext.getRemoteAddr();
+        if (redisUtil.validateRepeat("DOC_VOTE_" + id + "_" + ip, 5000)) {
+            docMapperCust.increaseVoteCount(id);
+        } else {
+            throw new BusinessException(BusinessExceptionCode.VOTE_REPEAT);
+        }
+
+//        // 推送消息
+//        Doc docDb = docMapper.selectByPrimaryKey(id);
+//        String logId = MDC.get("LOG_ID");
+//        wsService.sendInfo("【" + docDb.getName() + "】被点赞！", logId);
+//        // rocketMQTemplate.convertAndSend("VOTE_TOPIC", "【" + docDb.getName() + "】被点赞！");
+    }
+
+
+    public void updateEbookInfo() {
+        docMapperCust.updateEbookInfo();
+    }
+
 }

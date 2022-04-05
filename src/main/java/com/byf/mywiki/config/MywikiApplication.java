@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Component;
 
 
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Component;
 @ComponentScan("com.byf")
 @SpringBootApplication
 @MapperScan("com.byf.mywiki.mapper")
+@EnableScheduling
 public class MywikiApplication {
 
     private static final Logger LOG = LoggerFactory.getLogger(MywikiApplication.class);
