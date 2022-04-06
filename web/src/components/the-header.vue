@@ -1,6 +1,6 @@
 <template>
   <a-layout-header class="header">
-    <div class="logo" />
+    <div class="logo" ></div>
     <a-menu
         theme="dark"
         mode="horizontal"
@@ -132,11 +132,6 @@ export default defineComponent({
 });
 </script>
 <style>
-.login-menu {
-  float: right;
-  color: white;
-  padding-left: 10px;
-}
 .logo {
   width: 120px;
   height: 31px;
@@ -145,6 +140,12 @@ export default defineComponent({
   float: left;
   color: white;
   font-size: 18px;
+}
+
+.login-menu {
+  float: right;
+  color: white;
+  padding-left: 10px;
 }
 
 </style>
